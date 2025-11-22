@@ -6,10 +6,15 @@ section {
 .site-header {
     position: sticky;
     top: 0;
-    z-index: 20;
+    z-index: 40;
     background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border);
+}
+
+.site-header--menu-open {
+    background: #fff;
+    backdrop-filter: none;
 }
 
 .header__inner {
@@ -47,6 +52,87 @@ section {
     border-radius: 999px;
 }
 
+.header__offcanvas {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: none;
+    z-index: 25;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.header__offcanvas--open {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+.header__offcanvas-backdrop {
+    position: absolute;
+    inset: 0;
+    border: none;
+    padding: 0;
+    background: rgba(18, 18, 18, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.header__offcanvas-panel {
+    position: relative;
+    width: min(90vw, 360px);
+    background: #fff;
+    height: 100vh;
+    padding: 2rem;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.header__offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__offcanvas-title {
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    font-size: 0.85rem;
+    color: var(--color-muted);
+}
+
+.header__offcanvas-close {
+    border: none;
+    background: transparent;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+.header__offcanvas--open .header__offcanvas-panel {
+    transform: translateX(0);
+}
+
+.header__offcanvas--open .header__offcanvas-backdrop {
+    opacity: 1;
+}
+
+.header__offcanvas-panel .main-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
 .main-nav ul {
     display: flex;
     list-style: none;
@@ -61,6 +147,14 @@ section {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.header__actions--stacked {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1.25rem;
 }
 
 .social-links {

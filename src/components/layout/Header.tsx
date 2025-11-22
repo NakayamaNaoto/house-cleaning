@@ -13,7 +13,7 @@ const Header = () => {
     };
 
     return (
-        <header className="site-header">
+        <header className={`site-header${isMenuOpen ? " site-header--menu-open" : ""}`}>
             <div className="container header__inner">
                 <a className="brand" href="/">
                     <span className="brand__title">HUA OBST</span>
@@ -25,34 +25,47 @@ const Header = () => {
                     <span className="header__menu-toggle-bar" aria-hidden="true" />
                     <span className="header__menu-toggle-bar" aria-hidden="true" />
                 </button>
+            </div>
 
-                <div id="header-menu-content" className={`header__menu${isMenuOpen ? " header__menu--open" : ""}`} hidden={!isMenuOpen}>
-                    <nav className="main-nav" aria-label="メインメニュー">
-                        <ul>
-                            {navigationLinks.slice(0, 8).map((link) => (
-                                <li key={link.href}>
-                                    <a href={link.href} onClick={closeMenu}>
+            {isMenuOpen && (
+                <div className="header__offcanvas header__offcanvas--open" aria-hidden={!isMenuOpen}>
+                    <button className="header__offcanvas-backdrop" type="button" aria-label="メニューを閉じる" onClick={closeMenu} />
+
+                    <div id="header-menu-content" className="header__offcanvas-panel" role="dialog" aria-modal="true" aria-label="メインメニュー">
+                        <div className="header__offcanvas-header">
+                            <span className="header__offcanvas-title">メニュー</span>
+                            <button className="header__offcanvas-close" type="button" onClick={closeMenu} aria-label="メニューを閉じる">
+                                閉じる
+                            </button>
+                        </div>
+
+                        <nav className="main-nav" aria-label="メインメニュー">
+                            <ul>
+                                {navigationLinks.slice(0, 8).map((link) => (
+                                    <li key={link.href}>
+                                        <a href={link.href} onClick={closeMenu}>
+                                            {link.label}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+
+                        <div className="header__actions header__actions--stacked">
+                            <div className="social-links" aria-label="SNS">
+                                {socialLinks.map((link) => (
+                                    <a key={link.href} href={link.href} target="_blank" rel="noreferrer" onClick={closeMenu}>
                                         {link.label}
                                     </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
-
-                    <div className="header__actions">
-                        <div className="social-links" aria-label="SNS">
-                            {socialLinks.map((link) => (
-                                <a key={link.href} href={link.href} target="_blank" rel="noreferrer" onClick={closeMenu}>
-                                    {link.label}
-                                </a>
-                            ))}
+                                ))}
+                            </div>
+                            <a className="btn btn--ghost" href="/contact/" onClick={closeMenu}>
+                                お問い合わせ
+                            </a>
                         </div>
-                        <a className="btn btn--ghost" href="/contact/" onClick={closeMenu}>
-                            お問い合わせ
-                        </a>
                     </div>
                 </div>
-            </div>
+            )}
         </header>
     );
 };
