@@ -9,11 +9,13 @@ import ContactCTA from "./components/sections/ContactCTA";
 import PricingSection from "./components/sections/PricingSection";
 import GridShowcaseSection from "./components/sections/GridShowcaseSection";
 import Breadcrumb from "./components/sections/Breadcrumb";
+import ShowcaseBanner from "./components/sections/ShowcaseBanner";
 
 function App() {
     return (
         <>
             <Header />
+            <ShowcaseBanner />
             <main>
                 <Breadcrumb />
                 <HeroSection />
