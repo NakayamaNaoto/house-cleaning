@@ -1,3 +1,5 @@
+import "./ShowcaseBanner.scss";
+
 const ShowcaseBanner = () => {
     return (
         <section className="showcase-banner" aria-label="お掃除代行のご案内">

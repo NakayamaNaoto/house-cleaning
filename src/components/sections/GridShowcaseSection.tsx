@@ -1,4 +1,5 @@
 import { gridCards } from "../../data/content";
+import "./GridShowcaseSection.scss";
 
 const GridShowcaseSection = () => {
     return (

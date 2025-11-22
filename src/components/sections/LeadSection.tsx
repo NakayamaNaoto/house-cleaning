@@ -1,4 +1,5 @@
 import { leadMessage } from "../../data/content";
+import "./LeadSection.scss";
 
 const LeadSection = () => {
     return (

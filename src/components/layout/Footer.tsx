@@ -1,4 +1,5 @@
 import { navigationLinks } from "../../data/content";
+import "./Footer.scss";
 
 const Footer = () => {
     const primaryLinks = navigationLinks.slice(0, 8);

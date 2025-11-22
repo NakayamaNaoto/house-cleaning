@@ -1,4 +1,5 @@
 import { featureCards } from "../../data/content";
+import "./StrengthsSection.scss";
 
 const StrengthsSection = () => {
     return (

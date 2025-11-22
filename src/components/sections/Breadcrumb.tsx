@@ -1,3 +1,5 @@
+import "./Breadcrumb.scss";
+
 const crumbs = [
     { label: "名古屋のパーソナルなら駅近で通いやすいHUA OBST | 引き締め", href: "/" },
     { label: "原状回復工事は信頼の55リフォーム名古屋店", href: "/55reform/" },

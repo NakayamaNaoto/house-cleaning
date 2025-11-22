@@ -1,4 +1,5 @@
 import { pointCards } from "../../data/content";
+import "./PointsSection.scss";
 
 const PointsSection = () => {
     return (

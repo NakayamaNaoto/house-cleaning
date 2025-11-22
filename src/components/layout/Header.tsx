@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { navigationLinks, socialLinks } from "../../data/content";
+import "./Header.scss";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

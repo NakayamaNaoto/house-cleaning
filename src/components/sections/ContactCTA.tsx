@@ -1,4 +1,5 @@
 import { contactInfo } from "../../data/content";
+import "./ContactCTA.scss";
 
 const ContactCTA = () => {
     return (

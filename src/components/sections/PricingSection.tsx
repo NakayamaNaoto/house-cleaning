@@ -1,4 +1,5 @@
 import { planCards } from "../../data/content";
+import "./PricingSection.scss";
 
 const PricingSection = () => {
     return (

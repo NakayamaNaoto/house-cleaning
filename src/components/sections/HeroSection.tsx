@@ -1,4 +1,5 @@
 import { heroContent } from "../../data/content";
+import "./HeroSection.scss";
 
 const HeroSection = () => {
     return (

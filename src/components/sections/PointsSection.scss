@@ -1,0 +1,61 @@
+.points {
+    background: #fff;
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .point-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: var(--shadow-soft);
+        background: #fdfdfd;
+
+        &__media {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__body {
+            padding: 2rem;
+
+            h3 {
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+
+            p {
+                color: var(--color-muted);
+            }
+        }
+
+        &__badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 999px;
+            background: var(--color-accent);
+            color: #fff;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            grid-template-columns: 1fr;
+
+            &__body {
+                padding: 1.25rem;
+            }
+        }
+    }
+}
