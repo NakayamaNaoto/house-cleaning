@@ -28,10 +28,6 @@ export interface GridCard {
 export interface ContactInfo {
     tel: string;
     hours: string;
-    message: {
-        desktop: string;
-        mobile: string[];
-    };
 }
 
 export interface NavigationLink {

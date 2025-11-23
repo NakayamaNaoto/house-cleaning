@@ -1,59 +1,89 @@
 .contact-cta {
-    background: var(--color-accent);
-    color: #fff;
+    background: #f6f6f6;
+    color: #2f2f2f;
+    padding: 3rem 0;
 
     &__inner {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
         gap: 1.5rem;
+        text-align: center;
     }
 
     &__message {
+        max-width: 720px;
+
         p {
             margin: 0;
-            font-size: 1.1rem;
-            line-height: 1.7;
+            font-size: 1.25rem;
+            letter-spacing: 0.08em;
+            line-height: 1.8;
         }
     }
 
-    &__info {
+    &__panel {
+        width: 100%;
+        background: #807d7d;
+        color: #fff;
         display: flex;
-        gap: 2rem;
         align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        padding: 1.4rem 2rem;
     }
 
     &__tel,
     &__hours {
-        span {
-            font-size: 0.8rem;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            opacity: 0.8;
-        }
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 1.15rem;
     }
 
     &__tel {
         a {
-            display: block;
-            color: #fff;
-            font-size: 1.8rem;
+            color: inherit;
+            font-size: 1.7rem;
             font-weight: 600;
+            text-decoration: none;
         }
     }
 
-    &__hours {
-        strong {
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+
+        svg {
             display: block;
-            font-size: 1.2rem;
         }
     }
 
-    @media (max-width: 600px) {
-        &__info {
+    &__divider {
+        width: 1px;
+        height: 2rem;
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+    &__label {
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+    }
+
+    &__value {
+        font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+        &__panel {
             flex-direction: column;
-            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        &__divider {
+            display: none;
         }
     }
 }

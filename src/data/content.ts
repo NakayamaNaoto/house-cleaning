@@ -15,6 +15,7 @@ export const navigationLinks: NavigationLink[] = [
     { label: "サイトマップ", href: "/sitemap/" },
 ];
 
+// TODO:contactInfoと統一する
 export const socialLinks = [
     { label: "LINE", href: "https://lin.ee/RZedPno" },
     { label: "Instagram", href: "https://www.instagram.com/huaobst.2021/" },
@@ -119,8 +120,4 @@ export const gridCards: GridCard[] = [
 export const contactInfo: ContactInfo = {
     tel: "052-990-3015",
     hours: "8:00～22:00",
-    message: {
-        desktop: "お急ぎの場合は電話窓口まで、お気軽にお問い合わせください。",
-        mobile: ["お急ぎの場合は電話窓口まで、", "お気軽にお問い合わせください。"],
-    },
 };
