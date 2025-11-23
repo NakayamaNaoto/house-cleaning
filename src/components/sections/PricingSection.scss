@@ -1,8 +1,8 @@
 .pricing {
-    &__grid {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
     }
 
     .plan-card {
@@ -10,15 +10,17 @@
         border-radius: var(--radius-lg);
         overflow: hidden;
         box-shadow: var(--shadow-soft);
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: minmax(240px, 1fr) minmax(320px, 1.5fr);
+        gap: 1.5rem;
 
         &__media {
             position: relative;
+            display: flex;
 
             img {
-                height: 200px;
                 width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
         }
@@ -47,10 +49,20 @@
             color: var(--color-text);
         }
 
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+
+            &__media {
+                img {
+                    height: 220px;
+                }
+            }
+        }
+
         @media (max-width: 600px) {
             &__media {
                 img {
-                    height: 160px;
+                    height: 180px;
                 }
             }
         }

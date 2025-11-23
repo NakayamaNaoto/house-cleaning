@@ -1,6 +1,6 @@
-import type { ContactInfo, FeatureCard, GridCard, HeroContent, LeadMessage, NavigationLink, PlanCard, PointCard } from "../types/content";
+import type { ContactInfo, GridCard, NavigationLink } from "../types/content";
 
-export const navigationLinks: NavigationLink[] = [
+export const primaryLinks: NavigationLink[] = [
     { label: "トップページ", href: "/" },
     { label: "メニュー", href: "/menu/" },
     { label: "ギャラリー", href: "/gallery/" },
@@ -9,6 +9,9 @@ export const navigationLinks: NavigationLink[] = [
     { label: "名古屋 | ブライダル", href: "/bridal/" },
     { label: "名古屋 | スポーツ", href: "/sports/" },
     { label: "アクセス", href: "/access/" },
+];
+
+export const secondaryLinks: NavigationLink[] = [
     { label: "お問い合わせ", href: "/contact/" },
     { label: "用語集", href: "/dictionary/" },
     { label: "プライバシーポリシー", href: "/privacy_policy/" },
@@ -18,80 +21,6 @@ export const navigationLinks: NavigationLink[] = [
 export const socialLinks = [
     { label: "LINE", href: "https://lin.ee/RZedPno" },
     { label: "Instagram", href: "https://www.instagram.com/huaobst.2021/" },
-];
-
-export const heroContent: HeroContent = {
-    headline: ["安さで業者を選んでませんか？", "適正価格で安心なお掃除代行を。"],
-    subline: "水回りやエアコン。大切なご自宅に伺うプロ選びは慎重に。",
-    heroImage: "/images/hero.jpg",
-};
-
-export const leadMessage: LeadMessage = {
-    title: "お掃除代行の頼み先に困っている方に！",
-    subtitle: ["ハウスクリーニングのプロがLINE一本で、", "無料見積もりから出張対応まで一括対応いたします！"],
-};
-
-export const featureCards: FeatureCard[] = [
-    {
-        title: "ハウスクリーニングの基準は新品同様の美しさ",
-        body: ["55リフォーム名古屋店は普段、新入居者様をお迎えする前のアパート清掃も担当しており、水回りやキッチンなど、新品に近づけるハウスクリーニングの質が求められる中でお仕事をするプロ集団の為、出来栄えは当然安心。"],
-        image: "/images/feature-1.jpg",
-    },
-    {
-        title: "安心の2段階無料お見積もり",
-        body: ["お問い合わせの際にLINEのやり取りで大まかなお見積りをお出ししたのち、現地訪問にて最終のお見積りを作成しますので、スタッフ訪問時も安心してお見積りの確認をいただけます。"],
-        image: "/images/feature-2.jpg",
-    },
-    {
-        title: "お掃除代行のご依頼確定するまで全て無料対応",
-        body: ["55リフォーム名古屋店の事前対応の手厚さゆえに「本当に依頼するまで無料？」とご質問いただくことがありますが、本当に無料です！", "昨今、様々なタイプのエアコンやキッチンシステム等ありますので、事前の現地調査を非常に重要視しております。訪問のご対応、何卒よろしくお願い申し上げます。"],
-        image: "/images/feature-3.jpg",
-    },
-];
-
-export const pointCards: PointCard[] = [
-    {
-        label: "01",
-        title: ["水回り汚れを根本から除去"],
-        body: ["美しさを取り戻したキッチンや水回りが直ぐに汚れてしまわぬよう、「根本の汚れ除去」を基本としたハウスクリーニングを提供しております。"],
-        image: "/images/point-1.jpg",
-    },
-    {
-        label: "02",
-        title: ["お掃除代行は仕上がりだけじゃない！", "人柄の良いスタッフが安心の気配り対応"],
-        body: ["お掃除代行はお客様の大切なご自宅に伺う為、55リフォーム名古屋では腕の良さはもちろんのこと、お客様から安心される人柄の良いスタッフだけをご用意しております。"],
-        image: "/images/point-2.jpg",
-    },
-    {
-        label: "03",
-        title: ["水回り、エアコン各所のプロが対応！"],
-        body: ["一言にお掃除代行といっても、水回りやキッチン、エアコン清掃など多岐にわたりますので各所専門のプロが対応させていただきます。"],
-        image: "/images/point-3.jpg",
-    },
-];
-
-export const planCards: PlanCard[] = [
-    {
-        label: "01",
-        title: "大掃除シーズンに大人気！",
-        subtitle: "お掃除代行3点セット",
-        body: ["【レンジフード、キッチン 、浴室、お掃除機能付きエアコン】から2点、【トイレ、洗面台、通常エアコン】から1点、計3点お好きなクリーニング箇所をお選びいただけるお得なプランです。"],
-        image: "/images/plan-1.jpg",
-    },
-    {
-        label: "02",
-        title: "しつこい水アカ、カビ汚れに",
-        subtitle: "水回り5点セット",
-        body: ["レンジフード（換気扇）、キッチン 、浴室、洗面台、トイレの水回り5箇所をまとめてお掃除するお得なお掃除代行プランです。", "※作業時間目安は6時間程度の想定となります。"],
-        image: "/images/plan-2.jpg",
-    },
-    {
-        label: "03",
-        title: "こびりついた油汚れも徹底除去！",
-        subtitle: "キッチン＆レンジフードセット",
-        body: ["サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト"],
-        image: "/images/plan-3.jpg",
-    },
 ];
 
 export const gridCards: GridCard[] = [
@@ -130,8 +59,4 @@ export const gridCards: GridCard[] = [
 export const contactInfo: ContactInfo = {
     tel: "052-990-3015",
     hours: "8:00～22:00",
-    message: {
-        desktop: "お急ぎの場合は電話窓口まで、お気軽にお問い合わせください。",
-        mobile: ["お急ぎの場合は電話窓口まで、", "お気軽にお問い合わせください。"],
-    },
 };

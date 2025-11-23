@@ -1,10 +1,7 @@
-import { navigationLinks } from "../../data/content";
+import { primaryLinks, secondaryLinks } from "../../data/content";
 import "./Footer.scss";
 
 const Footer = () => {
-    const primaryLinks = navigationLinks.slice(0, 8);
-    const secondaryLinks = navigationLinks.slice(8);
-
     return (
         <footer className="site-footer">
             <div className="container footer__inner">

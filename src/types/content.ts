@@ -1,35 +1,3 @@
-export interface HeroContent {
-    headline: string[];
-    subline: string;
-    heroImage: string;
-}
-
-export interface LeadMessage {
-    title: string;
-    subtitle: string[];
-}
-
-export interface FeatureCard {
-    title: string;
-    body: string[];
-    image: string;
-}
-
-export interface PointCard {
-    label: string;
-    title: string[];
-    body: string[];
-    image: string;
-}
-
-export interface PlanCard {
-    label: string;
-    title: string;
-    subtitle: string;
-    body: string[];
-    image: string;
-}
-
 export interface GridCard {
     title: string;
     body: string;
@@ -39,10 +7,6 @@ export interface GridCard {
 export interface ContactInfo {
     tel: string;
     hours: string;
-    message: {
-        desktop: string;
-        mobile: string[];
-    };
 }
 
 export interface NavigationLink {

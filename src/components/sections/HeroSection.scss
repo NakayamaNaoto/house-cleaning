@@ -5,10 +5,10 @@
     margin-bottom: clamp(2rem, 4vw, 4rem);
 
     &__inner {
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         align-items: center;
         gap: 2rem;
+        text-align: center;
     }
 
     &__media {
@@ -21,13 +21,6 @@
             height: 100%;
             object-fit: cover;
         }
-    }
-
-    &__eyebrow {
-        font-size: 0.85rem;
-        letter-spacing: 0.4em;
-        color: var(--color-muted);
-        margin-bottom: 0.75rem;
     }
 
     &__content {
