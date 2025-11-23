@@ -1,16 +1,3 @@
-export interface FeatureCard {
-    title: string;
-    body: string[];
-    image: string;
-}
-
-export interface PointCard {
-    label: string;
-    title: string[];
-    body: string[];
-    image: string;
-}
-
 export interface PlanCard {
     label: string;
     title: string;
