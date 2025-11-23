@@ -1,4 +1,4 @@
-import type { ContactInfo, GridCard, NavigationLink, PlanCard } from "../types/content";
+import type { ContactInfo, GridCard, NavigationLink } from "../types/content";
 
 export const primaryLinks: NavigationLink[] = [
     { label: "トップページ", href: "/" },
@@ -21,30 +21,6 @@ export const secondaryLinks: NavigationLink[] = [
 export const socialLinks = [
     { label: "LINE", href: "https://lin.ee/RZedPno" },
     { label: "Instagram", href: "https://www.instagram.com/huaobst.2021/" },
-];
-
-export const planCards: PlanCard[] = [
-    {
-        label: "01",
-        title: "大掃除シーズンに大人気！",
-        subtitle: "お掃除代行3点セット",
-        body: ["【レンジフード、キッチン 、浴室、お掃除機能付きエアコン】から2点、【トイレ、洗面台、通常エアコン】から1点、計3点お好きなクリーニング箇所をお選びいただけるお得なプランです。"],
-        image: "/images/plan-1.jpg",
-    },
-    {
-        label: "02",
-        title: "しつこい水アカ、カビ汚れに",
-        subtitle: "水回り5点セット",
-        body: ["レンジフード（換気扇）、キッチン 、浴室、洗面台、トイレの水回り5箇所をまとめてお掃除するお得なお掃除代行プランです。", "※作業時間目安は6時間程度の想定となります。"],
-        image: "/images/plan-2.jpg",
-    },
-    {
-        label: "03",
-        title: "こびりついた油汚れも徹底除去！",
-        subtitle: "キッチン＆レンジフードセット",
-        body: ["サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト"],
-        image: "/images/plan-3.jpg",
-    },
 ];
 
 export const gridCards: GridCard[] = [

@@ -1,11 +1,3 @@
-export interface PlanCard {
-    label: string;
-    title: string;
-    subtitle: string;
-    body: string[];
-    image: string;
-}
-
 export interface GridCard {
     title: string;
     body: string;
