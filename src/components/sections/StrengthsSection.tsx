@@ -6,7 +6,6 @@ const StrengthsSection = () => {
         <section className="strengths">
             <div className="container">
                 <header className="section-heading">
-                    <p className="kicker">お掃除代行</p>
                     <h2>
                         55リフォーム名古屋店のここがすごい！
                         <span>キッチンや水回り、エアコン…長年の汚れもピカピカに！</span>

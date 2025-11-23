@@ -1,14 +1,3 @@
-export interface HeroContent {
-    headline: string[];
-    subline: string;
-    heroImage: string;
-}
-
-export interface LeadMessage {
-    title: string;
-    subtitle: string[];
-}
-
 export interface FeatureCard {
     title: string;
     body: string[];

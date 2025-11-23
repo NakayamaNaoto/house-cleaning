@@ -1,16 +1,13 @@
-import { leadMessage } from "../../data/content";
 import "./LeadSection.scss";
 
 const LeadSection = () => {
     return (
         <section className="lead-section">
             <div className="container">
-                <p className="kicker">CHECK!</p>
-                <h2>{leadMessage.title}</h2>
+                <h2>お掃除代行の頼み先に困っている方に！</h2>
                 <div className="lead-section__subtitle">
-                    {leadMessage.subtitle.map((line) => (
-                        <span key={line}>{line}</span>
-                    ))}
+                    <span>ハウスクリーニングのプロがLINE一本で、</span>
+                    <span>無料見積もりから出張対応まで一括対応いたします！</span>
                 </div>
             </div>
         </section>

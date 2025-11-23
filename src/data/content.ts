@@ -1,4 +1,4 @@
-import type { ContactInfo, FeatureCard, GridCard, HeroContent, LeadMessage, NavigationLink, PlanCard, PointCard } from "../types/content";
+import type { ContactInfo, FeatureCard, GridCard, NavigationLink, PlanCard, PointCard } from "../types/content";
 
 export const navigationLinks: NavigationLink[] = [
     { label: "トップページ", href: "/" },
@@ -19,17 +19,6 @@ export const socialLinks = [
     { label: "LINE", href: "https://lin.ee/RZedPno" },
     { label: "Instagram", href: "https://www.instagram.com/huaobst.2021/" },
 ];
-
-export const heroContent: HeroContent = {
-    headline: ["安さで業者を選んでませんか？", "適正価格で安心なお掃除代行を。"],
-    subline: "水回りやエアコン。大切なご自宅に伺うプロ選びは慎重に。",
-    heroImage: "/images/hero.jpg",
-};
-
-export const leadMessage: LeadMessage = {
-    title: "お掃除代行の頼み先に困っている方に！",
-    subtitle: ["ハウスクリーニングのプロがLINE一本で、", "無料見積もりから出張対応まで一括対応いたします！"],
-};
 
 export const featureCards: FeatureCard[] = [
     {
