@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { navigationLinks, socialLinks } from "../../data/content";
+import { primaryLinks, socialLinks } from "../../data/content";
 import "./Header.scss";
 
 const Header = () => {
@@ -42,7 +42,7 @@ const Header = () => {
 
                         <nav className="main-nav" aria-label="メインメニュー">
                             <ul>
-                                {navigationLinks.slice(0, 8).map((link) => (
+                                {primaryLinks.map((link) => (
                                     <li key={link.href}>
                                         <a href={link.href} onClick={closeMenu}>
                                             {link.label}

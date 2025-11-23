@@ -7,10 +7,7 @@ const GridShowcaseSection = () => {
             <div className="container">
                 <header className="section-heading">
                     <p className="kicker">Sample</p>
-                    <h2>
-                        明瞭会計を実現するシンプルな料金形態
-                        <span>各所のハウスクリーニングに柔軟対応</span>
-                    </h2>
+                    <h2>明瞭会計を実現するシンプルな料金形態</h2>
                 </header>
 
                 <div className="grid-showcase__grid">

@@ -1,6 +1,6 @@
 import type { ContactInfo, FeatureCard, GridCard, NavigationLink, PlanCard, PointCard } from "../types/content";
 
-export const navigationLinks: NavigationLink[] = [
+export const primaryLinks: NavigationLink[] = [
     { label: "トップページ", href: "/" },
     { label: "メニュー", href: "/menu/" },
     { label: "ギャラリー", href: "/gallery/" },
@@ -9,13 +9,15 @@ export const navigationLinks: NavigationLink[] = [
     { label: "名古屋 | ブライダル", href: "/bridal/" },
     { label: "名古屋 | スポーツ", href: "/sports/" },
     { label: "アクセス", href: "/access/" },
+];
+
+export const secondaryLinks: NavigationLink[] = [
     { label: "お問い合わせ", href: "/contact/" },
     { label: "用語集", href: "/dictionary/" },
     { label: "プライバシーポリシー", href: "/privacy_policy/" },
     { label: "サイトマップ", href: "/sitemap/" },
 ];
 
-// TODO:contactInfoと統一する
 export const socialLinks = [
     { label: "LINE", href: "https://lin.ee/RZedPno" },
     { label: "Instagram", href: "https://www.instagram.com/huaobst.2021/" },
