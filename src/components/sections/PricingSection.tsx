@@ -12,7 +12,7 @@ const PricingSection = () => {
                     </h2>
                 </header>
 
-                <div className="pricing__grid">
+                <div className="pricing__list">
                     <article className="plan-card">
                         <div className="plan-card__media">
                             <img src="/images/plan-1.jpg" alt="お掃除代行3点セット" loading="lazy" />
