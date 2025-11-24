@@ -1,6 +1,5 @@
 import "./App.scss";
 import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
 import HeroSection from "./components/sections/HeroSection";
 import LeadSection from "./components/sections/LeadSection";
 import StrengthsSection from "./components/sections/StrengthsSection";
@@ -26,7 +25,6 @@ function App() {
                 <PricingSection />
                 <GridShowcaseSection />
             </main>
-            <Footer />
         </>
     );
 }
