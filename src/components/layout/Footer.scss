@@ -1,7 +1,6 @@
 .site-footer {
     background: #121212;
     color: rgba(255, 255, 255, 0.85);
-    padding-top: 3rem;
 
     .footer__inner {
         display: grid;
@@ -31,5 +30,15 @@
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         text-align: center;
         font-size: 0.8rem;
+    }
+
+    @media (max-width: 767px) {
+        .footer__inner {
+            display: none;
+        }
+
+        .footer__bottom {
+            margin-top: 0;
+        }
     }
 }
