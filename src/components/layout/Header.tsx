@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { primaryLinks, socialLinks } from "../../data/content";
+import { primaryLinks, secondaryLinks } from "../../data/content";
 import "./Header.scss";
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
             <div className="container header__inner">
                 <a className="brand" href="/">
                     <span className="brand__title">HUA OBST</span>
-                    <span className="brand__subtitle">55リフォーム名古屋庁E</span>
+                    <span className="brand__subtitle">55リフォーム</span>
                 </a>
 
                 <button className="header__menu-toggle" type="button" aria-label={isMenuOpen ? "メニューを閉じる" : "メニューを開く"} aria-expanded={isMenuOpen} aria-controls="header-menu-content" onClick={toggleMenu}>
@@ -41,7 +41,7 @@ const Header = () => {
                         </div>
 
                         <nav className="main-nav" aria-label="メインメニュー">
-                            <ul>
+                            <ul className="main-nav__list">
                                 {primaryLinks.map((link) => (
                                     <li key={link.href}>
                                         <a href={link.href} onClick={closeMenu}>
@@ -50,20 +50,17 @@ const Header = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </nav>
-
-                        <div className="header__actions header__actions--stacked">
-                            <div className="social-links" aria-label="SNS">
-                                {socialLinks.map((link) => (
-                                    <a key={link.href} href={link.href} target="_blank" rel="noreferrer" onClick={closeMenu}>
-                                        {link.label}
-                                    </a>
+                            <div className="main-nav__divider" role="separator" aria-hidden="true" />
+                            <ul className="main-nav__list main-nav__list--secondary" aria-label="その他のリンク">
+                                {secondaryLinks.map((link) => (
+                                    <li key={link.href}>
+                                        <a href={link.href} onClick={closeMenu}>
+                                            {link.label}
+                                        </a>
+                                    </li>
                                 ))}
-                            </div>
-                            <a className="btn btn--ghost" href="/contact/" onClick={closeMenu}>
-                                お問い合わせ
-                            </a>
-                        </div>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             )}

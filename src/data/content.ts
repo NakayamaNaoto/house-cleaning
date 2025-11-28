@@ -2,20 +2,20 @@ import type { ContactInfo, GridCard, NavigationLink } from "../types/content";
 
 export const primaryLinks: NavigationLink[] = [
     { label: "トップページ", href: "/" },
-    { label: "メニュー", href: "/menu/" },
-    { label: "ギャラリー", href: "/gallery/" },
-    { label: "よくある質問", href: "/faq/" },
-    { label: "新着情報", href: "/new_page/" },
-    { label: "名古屋 | ブライダル", href: "/bridal/" },
-    { label: "名古屋 | スポーツ", href: "/sports/" },
-    { label: "アクセス", href: "/access/" },
+    { label: "エアコンお掃除", href: "/air-conditioner/" },
+    { label: "キッチンお掃除", href: "/kitchen/" },
+    { label: "洗濯機お掃除", href: "/washing-machine/" },
+    { label: "その他のお掃除プラン", href: "/other-plans/" },
+    { label: "まとめてプラン", href: "/set-plans/" },
 ];
 
 export const secondaryLinks: NavigationLink[] = [
-    { label: "お問い合わせ", href: "/contact/" },
-    { label: "用語集", href: "/dictionary/" },
-    { label: "プライバシーポリシー", href: "/privacy_policy/" },
-    { label: "サイトマップ", href: "/sitemap/" },
+    { label: "55Reformのハウスクリーニング", href: "/contact/" },
+    { label: "お問合せ", href: "/dictionary/" },
+    { label: "法人のお客様はこちら", href: "/privacy_policy/" },
+    { label: "55Reform パートナー募集", href: "/sitemap/" },
+    { label: "新着情報", href: "/sitemap/" },
+    { label: "ブログ記事", href: "/sitemap/" },
 ];
 
 export const socialLinks = [
