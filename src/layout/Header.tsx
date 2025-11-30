@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { primaryLinks, secondaryLinks } from "../../data/content";
+import { primaryLinks, secondaryLinks } from "../data/content";
 import "./Header.scss";
 
 const Header = () => {

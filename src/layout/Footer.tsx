@@ -1,4 +1,4 @@
-import { primaryLinks, secondaryLinks } from "../../data/content";
+import { primaryLinks, secondaryLinks } from "../data/content";
 import "./Footer.scss";
 
 const Footer = () => {
