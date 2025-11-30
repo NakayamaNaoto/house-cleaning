@@ -50,7 +50,7 @@ const planItems = [
         title: "洗面台クリーニング",
         price: "9,800円（税込）",
         note: "",
-        image: "https://www.beppo.co.jp/wp-content/uploads/2020/03/wash-574x444.jpg",
+        image: "https://www.beppo.co.jp/wp-content/uploads/2020/03/wash_basin-574x444.jpg",
         link: "https://www.beppo.co.jp/menu/",
     },
     {
