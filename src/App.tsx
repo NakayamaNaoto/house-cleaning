@@ -1,33 +1,21 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
-import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
-import HeroSection from "./components/top/HeroSection";
-import LeadSection from "./components/top/LeadSection";
-import StrengthsSection from "./components/top/StrengthsSection";
-import PointsSection from "./components/top/PointsSection";
-import ContactCTA from "./components/top/ContactCTA";
-import PricingSection from "./components/top/PricingSection";
-import GridShowcaseSection from "./components/top/GridShowcaseSection";
-import Breadcrumb from "./components/top/Breadcrumb";
-import ShowcaseBanner from "./components/top/ShowcaseBanner";
+import Header from "./components/layout/Header";
+import AirConditionerPage from "./pages/AirConditionerPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
     return (
-        <>
+        <BrowserRouter>
             <Header />
-            <ShowcaseBanner />
-            <main>
-                <Breadcrumb />
-                <HeroSection />
-                <LeadSection />
-                <StrengthsSection />
-                <PointsSection />
-                <ContactCTA />
-                <PricingSection />
-                <GridShowcaseSection />
-            </main>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/air-conditioner/*" element={<AirConditionerPage />} />
+                <Route path="*" element={<HomePage />} />
+            </Routes>
             <Footer />
-        </>
+        </BrowserRouter>
     );
 }
 

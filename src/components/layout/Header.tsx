@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { primaryLinks, secondaryLinks } from "../../data/content";
 import "./Header.scss";
 
@@ -16,10 +17,10 @@ const Header = () => {
     return (
         <header className={`site-header${isMenuOpen ? " site-header--menu-open" : ""}`}>
             <div className="container header__inner">
-                <a className="brand" href="/">
+                <Link className="brand" to="/" onClick={closeMenu}>
                     <span className="brand__title">HUA OBST</span>
                     <span className="brand__subtitle">55リフォーム</span>
-                </a>
+                </Link>
 
                 <button className="header__menu-toggle" type="button" aria-label={isMenuOpen ? "メニューを閉じる" : "メニューを開く"} aria-expanded={isMenuOpen} aria-controls="header-menu-content" onClick={toggleMenu}>
                     <span className="header__menu-toggle-bar" aria-hidden="true" />
@@ -44,9 +45,9 @@ const Header = () => {
                             <ul className="main-nav__list">
                                 {primaryLinks.map((link) => (
                                     <li key={link.href}>
-                                        <a href={link.href} onClick={closeMenu}>
+                                        <Link to={link.href} onClick={closeMenu}>
                                             {link.label}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -54,9 +55,9 @@ const Header = () => {
                             <ul className="main-nav__list main-nav__list--secondary" aria-label="その他のリンク">
                                 {secondaryLinks.map((link) => (
                                     <li key={link.href}>
-                                        <a href={link.href} onClick={closeMenu}>
+                                        <Link to={link.href} onClick={closeMenu}>
                                             {link.label}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
