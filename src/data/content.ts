@@ -10,12 +10,12 @@ export const primaryLinks: NavigationLink[] = [
 ];
 
 export const secondaryLinks: NavigationLink[] = [
+    { label: "新着情報", href: "/sitemap/" },
     { label: "55Reformのハウスクリーニング", href: "/contact/" },
-    { label: "お問合せ", href: "/dictionary/" },
+    { label: "ブログ記事", href: "/sitemap/" },
     { label: "法人のお客様はこちら", href: "/privacy_policy/" },
     { label: "55Reform パートナー募集", href: "/sitemap/" },
-    { label: "新着情報", href: "/sitemap/" },
-    { label: "ブログ記事", href: "/sitemap/" },
+    { label: "お問合せ", href: "/contact/" },
 ];
 
 export const socialLinks = [
