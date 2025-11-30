@@ -1,15 +1,15 @@
 import "./App.scss";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
-import HeroSection from "./components/sections/HeroSection";
-import LeadSection from "./components/sections/LeadSection";
-import StrengthsSection from "./components/sections/StrengthsSection";
-import PointsSection from "./components/sections/PointsSection";
-import ContactCTA from "./components/sections/ContactCTA";
-import PricingSection from "./components/sections/PricingSection";
-import GridShowcaseSection from "./components/sections/GridShowcaseSection";
-import Breadcrumb from "./components/sections/Breadcrumb";
-import ShowcaseBanner from "./components/sections/ShowcaseBanner";
+import HeroSection from "./components/top/HeroSection";
+import LeadSection from "./components/top/LeadSection";
+import StrengthsSection from "./components/top/StrengthsSection";
+import PointsSection from "./components/top/PointsSection";
+import ContactCTA from "./components/top/ContactCTA";
+import PricingSection from "./components/top/PricingSection";
+import GridShowcaseSection from "./components/top/GridShowcaseSection";
+import Breadcrumb from "./components/top/Breadcrumb";
+import ShowcaseBanner from "./components/top/ShowcaseBanner";
 
 function App() {
     return (
