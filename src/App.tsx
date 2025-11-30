@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import AirConditionerPage from "./pages/AirConditionerPage/AirConditionerPage";
 import KitchenPage from "./pages/KitchenPage/KitchenPage";
 import WashingMachinePage from "./pages/WashingMachinePage/WashingMachinePage";
+import SetPlansPage from "./pages/SetPlansPage/SetPlansPage";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/air-conditioner/*" element={<AirConditionerPage />} />
                 <Route path="/kitchen/*" element={<KitchenPage />} />
                 <Route path="/washing-machine/*" element={<WashingMachinePage />} />
+                <Route path="/set-plans/*" element={<SetPlansPage />} />
                 <Route path="*" element={<HomePage />} />
             </Routes>
             <Footer />
