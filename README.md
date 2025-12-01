@@ -4,15 +4,15 @@ React/Vite 版から純粋な HTML + CSS + 最小限の JS に置き換えた静
 
 ## 構成
 
-- `index.html` … トップページ
-- `air-conditioner.html` … エアコンクリーニング
-- `kitchen.html` … キッチンクリーニング
-- `washing-machine.html` … 洗濯機クリーニング
-- `other-plans.html` … その他単品メニュー
-- `set-plans.html` … まとめてプラン
-- `assets/styles.css` … 共通スタイル
-- `assets/main.js` … ハンバーガーメニューの開閉スクリプト
-- `images/` … 画像アセット
+-   `index.html` … トップページ
+-   `air-conditioner.html` … エアコンクリーニング
+-   `kitchen.html` … キッチンクリーニング
+-   `washing-machine.html` … 洗濯機クリーニング
+-   `other-plans.html` … その他単品メニュー
+-   `set-plans.html` … まとめてプラン
+-   `assets/styles.css` … 共通スタイル
+-   `assets/main.js` … ハンバーガーメニューの開閉スクリプト
+-   `images/` … 画像アセット
 
 ## 使い方
 
@@ -21,5 +21,5 @@ React/Vite 版から純粋な HTML + CSS + 最小限の JS に置き換えた静
 
 ## 開発メモ
 
-- 依存は Prettier のみです。整形は `npm run format` を実行してください（`printWidth: 8000`, `tabWidth: 4`）。
-- JavaScript はモバイル用メニューの開閉のみを担当し、その他はすべて HTML/CSS で完結しています。
+-   追加の依存はありません。整形が必要なときは `npx prettier@3.7.3 --config .prettierrc.json --ignore-path .prettierignore --write "**/*.{html,css,js,json,md}"` を実行してください（`printWidth: 8000`, `tabWidth: 4`）。
+-   JavaScript はモバイル用メニューの開閉のみを担当し、その他はすべて HTML/CSS で完結しています。
