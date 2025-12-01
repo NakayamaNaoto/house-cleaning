@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".site-header");
     const toggle = document.querySelector("[data-menu-toggle]");
+    const closeButton = document.querySelector("[data-menu-close]");
     const backdrop = document.querySelector("[data-backdrop]");
     const menuLinks = document.querySelectorAll("[data-menu-link]");
 
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     toggle?.addEventListener("click", toggleMenu);
+    closeButton?.addEventListener("click", closeMenu);
     backdrop?.addEventListener("click", closeMenu);
 
     menuLinks.forEach((link) => {
