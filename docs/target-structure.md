@@ -1,42 +1,46 @@
 # Target Site Notes
 
-## ƒŒƒCƒAƒEƒgŠT—v
-- ŒÅ’èƒwƒbƒ_[: ƒƒSAƒOƒ[ƒoƒ‹ƒiƒriƒgƒbƒv/ƒƒjƒ…[/ƒMƒƒƒ‰ƒŠ[/FAQ ‚Ù‚©jALINEEInstagram ƒAƒCƒRƒ“A–â‚¢‡‚í‚¹ƒ{ƒ^ƒ“
-- ƒq[ƒ[: ƒLƒƒƒbƒ`ƒRƒs[i—á: ˆÀ‚³‚Å‹ÆŽÒ‚ð‘I‚ñ‚Å‚Ü‚¹‚ñ‚©Hj‚ÆƒŠ[ƒh•¶{‘S–Ê”wŒi‰æ‘œ
-- à–¾ƒZƒNƒVƒ‡ƒ“: u‚¨‘|œ‘ãs‚Ì—Š‚Ýæ‚É¢‚Á‚Ä‚¢‚é•û‚ÉIv‚È‚Ç‚ÌƒƒbƒZ[ƒW‚ð‘å‚«‚­”z’u
-- ŽÀÑ/“Á’¥ƒZƒNƒVƒ‡ƒ“: u55ƒŠƒtƒH[ƒ€–¼ŒÃ‰®“X‚Ì‚±‚±‚ª‚·‚²‚¢IvŒ©o‚µ”z‰º‚Éc•À‚Ñ‚ÌƒJ[ƒhi‰æ‘œ + h3 + ƒeƒLƒXƒgj~3
-- ——RƒZƒNƒVƒ‡ƒ“: uw—Š‚ñ‚Å—Ç‚©‚Á‚½Ix‚Ìº...vŒ©o‚µAPOINT 01?03 ‚ÌƒJ[ƒhi”wŒi‰æ‘œ + ”Ô†ƒoƒbƒW + à–¾j
-- CTA ƒo[: u‚¨‹}‚¬‚Ìê‡‚Í“d˜b...vu052-990-3015vu‰c‹ÆŽžŠÔ 8:00`22:00v
-- —¿‹à•\: u‚¨‘|œ‘ãsƒZƒbƒgƒvƒ‰ƒ“—¿‹àvŒ©o‚µA”Ô†•t‚«ƒJ[ƒh 3 –‡i‰æ‘œEƒ^ƒCƒgƒ‹E–{•¶j
-- ’Ç‰ÁƒOƒŠƒbƒh: data-lib 20762 •”•ª‚ÅƒJ[ƒh 6 –‡i‰æ‘œ + Œ©o‚µ + ƒeƒLƒXƒgj
-- ƒtƒbƒ^[: ƒƒS/ŽÐ–¼/ZŠ/“d˜bAŽå—vƒŠƒ“ƒN 2—ñiƒgƒbƒvƒy[ƒW/ƒƒjƒ…[.../ƒvƒ‰ƒCƒoƒV[“™j
+## ï¿½ï¿½ï¿½Cï¿½Aï¿½Eï¿½gï¿½Tï¿½v
 
-## ƒJƒ‰[ƒpƒŒƒbƒg & ƒ^ƒCƒ|ƒOƒ‰ƒtƒBitarget-site.css ‚æ‚èj
-- ƒx[ƒX”wŒi `#f7f7f7`
-- ƒx[ƒXƒeƒLƒXƒg `#131313`
-- ƒAƒNƒZƒ“ƒg `#393939`
-- •â•ƒJƒ‰[ `#828080`, ƒ{ƒ^ƒ“ `#a1a1a1`
-- ƒtƒHƒ“ƒg: ‚·‚×‚Ä Shippori Minchoiƒ^ƒCƒgƒ‹/–{•¶/‰pŽšj
-- ƒRƒ“ƒeƒi•: 1170pxi`[data-w-width="1"]`j
-- ƒŒƒXƒ|ƒ“ƒVƒu: 768px ˆÈ‰º‚ÅƒtƒHƒ“ƒgƒTƒCƒYk¬A`max-width:94%`
+- ï¿½Å’ï¿½wï¿½bï¿½_ï¿½[: ï¿½ï¿½ï¿½Sï¿½Aï¿½Oï¿½ï¿½ï¿½[ï¿½oï¿½ï¿½ï¿½iï¿½rï¿½iï¿½gï¿½bï¿½v/ï¿½ï¿½ï¿½jï¿½ï¿½ï¿½[/ï¿½Mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[/FAQ ï¿½Ù‚ï¿½ï¿½jï¿½ALINEï¿½EInstagram ï¿½Aï¿½Cï¿½Rï¿½ï¿½ï¿½Aï¿½â‚¢ï¿½ï¿½ï¿½í‚¹ï¿½{ï¿½^ï¿½ï¿½
+- ï¿½qï¿½[ï¿½ï¿½ï¿½[: ï¿½Lï¿½ï¿½ï¿½bï¿½`ï¿½Rï¿½sï¿½[ï¿½iï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½Å‹ÆŽÒ‚ï¿½Iï¿½ï¿½Å‚Ü‚ï¿½ï¿½ñ‚©Hï¿½jï¿½Æƒï¿½ï¿½[ï¿½hï¿½ï¿½ï¿½{ï¿½Sï¿½Ê”wï¿½iï¿½æ‘œ
+- ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½Nï¿½Vï¿½ï¿½ï¿½ï¿½: ï¿½uï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½sï¿½Ì—ï¿½ï¿½Ýï¿½Éï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ÉIï¿½vï¿½È‚Ç‚Ìƒï¿½ï¿½bï¿½Zï¿½[ï¿½Wï¿½ï¿½å‚«ï¿½ï¿½ï¿½zï¿½u
+- ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½Nï¿½Vï¿½ï¿½ï¿½ï¿½: ï¿½u55ï¿½ï¿½ï¿½tï¿½Hï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Ã‰ï¿½ï¿½Xï¿½Ì‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½vï¿½ï¿½ï¿½oï¿½ï¿½ï¿½zï¿½ï¿½ï¿½Écï¿½ï¿½ï¿½Ñ‚ÌƒJï¿½[ï¿½hï¿½iï¿½æ‘œ + h3 + ï¿½eï¿½Lï¿½Xï¿½gï¿½jï¿½~3
+- ï¿½ï¿½ï¿½Rï¿½Zï¿½Nï¿½Vï¿½ï¿½ï¿½ï¿½: ï¿½uï¿½wï¿½ï¿½ï¿½ï¿½Å—Ç‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½xï¿½Ìï¿½...ï¿½vï¿½ï¿½ï¿½oï¿½ï¿½ï¿½APOINT 01?03 ï¿½ÌƒJï¿½[ï¿½hï¿½iï¿½wï¿½iï¿½æ‘œ + ï¿½Ôï¿½ï¿½oï¿½bï¿½W + ï¿½ï¿½ï¿½ï¿½ï¿½j
+- CTA ï¿½oï¿½[: ï¿½uï¿½ï¿½ï¿½}ï¿½ï¿½ï¿½Ìê‡ï¿½Í“dï¿½b...ï¿½vï¿½u052-990-3015ï¿½vï¿½uï¿½cï¿½ÆŽï¿½ï¿½ï¿½ 8:00ï¿½`22:00ï¿½v
+- ï¿½ï¿½ï¿½ï¿½ï¿½\: ï¿½uï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½sï¿½Zï¿½bï¿½gï¿½vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½oï¿½ï¿½ï¿½Aï¿½Ôï¿½ï¿½tï¿½ï¿½ï¿½Jï¿½[ï¿½h 3 ï¿½ï¿½ï¿½iï¿½æ‘œï¿½Eï¿½^ï¿½Cï¿½gï¿½ï¿½ï¿½Eï¿½{ï¿½ï¿½ï¿½j
+- ï¿½Ç‰ï¿½ï¿½Oï¿½ï¿½ï¿½bï¿½h: data-lib 20762 ï¿½ï¿½ï¿½ï¿½ï¿½ÅƒJï¿½[ï¿½h 6 ï¿½ï¿½ï¿½iï¿½æ‘œ + ï¿½ï¿½ï¿½oï¿½ï¿½ + ï¿½eï¿½Lï¿½Xï¿½gï¿½j
+- ï¿½tï¿½bï¿½^ï¿½[: ï¿½ï¿½ï¿½S/ï¿½Ð–ï¿½/ï¿½Zï¿½ï¿½/ï¿½dï¿½bï¿½Aï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½N 2ï¿½ï¿½iï¿½gï¿½bï¿½vï¿½yï¿½[ï¿½W/ï¿½ï¿½ï¿½jï¿½ï¿½ï¿½[.../ï¿½vï¿½ï¿½ï¿½Cï¿½oï¿½Vï¿½[ï¿½ï¿½ï¿½j
 
-## ƒRƒ“ƒeƒ“ƒc‚ÌŽå‚È•¶Œ¾
-1. ƒq[ƒ[: uˆÀ‚³‚Å‹ÆŽÒ‚ð‘I‚ñ‚Å‚Ü‚¹‚ñ‚©Hvu“K³‰¿Ši‚ÅˆÀS‚È‚¨‘|œ‘ãs‚ðBv‚È‚Ç
-2. ƒAƒs[ƒ‹Œ©o‚µ: u‚¨‘|œ‘ãs 55ƒŠƒtƒH[ƒ€–¼ŒÃ‰®“X‚Ì‚±‚±‚ª‚·‚²‚¢IvƒTƒuuƒLƒbƒ`ƒ“‚â…‰ñ‚è...v
-3. ƒJ[ƒh“à—e:
-   - V•i“¯—l‚Ì”ü‚µ‚³‚ð–ÚŽw‚·ƒNƒIƒŠƒeƒB
-   - 2’iŠK–³—¿Œ©Ï‚à‚èiLINE ¨ Œ»’nj
-   - ˆË—ŠŠm’è‚Ü‚ÅŠ®‘S–³—¿iŒ»’n’²¸„§j
-4. POINT ƒZƒNƒVƒ‡ƒ“:
-   - 01 …‰ñ‚è‰˜‚ê‚ðª–{‚©‚çœ‹Ž
-   - 02 l•¿‚Ì—Ç‚¢ƒXƒ^ƒbƒt
-   - 03 ŠeŠê–å‚Ìƒvƒ‚ª‘Î‰ž
-5. CTA: “d˜b”Ô† 052-990-3015^‰c‹ÆŽžŠÔ 8:00`22:00
-6. —¿‹àƒvƒ‰ƒ“ƒJ[ƒhi—á: ‚¨‘|œ‘ãs3“_ƒZƒbƒgA…‰ñ‚è5“_ƒZƒbƒgAƒLƒbƒ`ƒ“•ƒŒƒ“ƒWƒt[ƒhƒZƒbƒgj
+## ï¿½Jï¿½ï¿½ï¿½[ï¿½pï¿½ï¿½ï¿½bï¿½g & ï¿½^ï¿½Cï¿½|ï¿½Oï¿½ï¿½ï¿½tï¿½Bï¿½itarget-site.css ï¿½ï¿½ï¿½j
 
-## ŽÀ‘•ã‚Ìƒƒ‚
-- ‘½‚­‚ÌƒZƒNƒVƒ‡ƒ“‚ª¶‰E 2ƒJƒ‰ƒ€iƒeƒLƒXƒg+‰æ‘œj‚Ü‚½‚ÍƒJ[ƒhƒOƒŠƒbƒh
-- ”wŒi‚Í’W‚¢ƒOƒŒ[ + ”’ƒJ[ƒhAƒ^ƒCƒgƒ‹‚ÍƒAƒNƒZƒ“ƒgF (#828080/#393939) ‚Æ Mincho ƒtƒHƒ“ƒg
-- ŠeƒJ[ƒh h3 ‚Æ–{•¶ p ‚ª•¡”s
-- ’Ç‰ÁƒJ[ƒhƒOƒŠƒbƒh(6–‡)‚Í `flex_list3` ‚Å 3—ñƒŒƒCƒAƒEƒg
-- Žå—vCTAiLINE/–â‚¢‡‚í‚¹ƒ{ƒ^ƒ“/“d˜bj‚ð•¡””z’u‚·‚é•K—v‚ ‚è
+- ï¿½xï¿½[ï¿½Xï¿½wï¿½i `#f7f7f7`
+- ï¿½xï¿½[ï¿½Xï¿½eï¿½Lï¿½Xï¿½g `#131313`
+- ï¿½Aï¿½Nï¿½Zï¿½ï¿½ï¿½g `#393939`
+- ï¿½â•ï¿½Jï¿½ï¿½ï¿½[ `#828080`, ï¿½{ï¿½^ï¿½ï¿½ `#a1a1a1`
+- ï¿½tï¿½Hï¿½ï¿½ï¿½g: ï¿½ï¿½ï¿½×‚ï¿½ Shippori Minchoï¿½iï¿½^ï¿½Cï¿½gï¿½ï¿½/ï¿½{ï¿½ï¿½/ï¿½pï¿½ï¿½ï¿½j
+- ï¿½Rï¿½ï¿½ï¿½eï¿½iï¿½ï¿½: 1170pxï¿½i`[data-w-width="1"]`ï¿½j
+- ï¿½ï¿½ï¿½Xï¿½|ï¿½ï¿½ï¿½Vï¿½u: 768px ï¿½È‰ï¿½ï¿½Åƒtï¿½Hï¿½ï¿½ï¿½gï¿½Tï¿½Cï¿½Yï¿½kï¿½ï¿½ï¿½A`max-width:94%`
+
+## ï¿½Rï¿½ï¿½ï¿½eï¿½ï¿½ï¿½cï¿½ÌŽï¿½È•ï¿½ï¿½ï¿½
+
+1. ï¿½qï¿½[ï¿½ï¿½ï¿½[: ï¿½uï¿½ï¿½ï¿½ï¿½ï¿½Å‹ÆŽÒ‚ï¿½Iï¿½ï¿½Å‚Ü‚ï¿½ï¿½ñ‚©Hï¿½vï¿½uï¿½Kï¿½ï¿½ï¿½ï¿½ï¿½iï¿½Åˆï¿½ï¿½Sï¿½È‚ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Bï¿½vï¿½È‚ï¿½
+2. ï¿½Aï¿½sï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½oï¿½ï¿½: ï¿½uï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½s 55ï¿½ï¿½ï¿½tï¿½Hï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Ã‰ï¿½ï¿½Xï¿½Ì‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½vï¿½Tï¿½uï¿½uï¿½Lï¿½bï¿½`ï¿½ï¿½ï¿½â…ï¿½ï¿½ï¿½...ï¿½v
+3. ï¿½Jï¿½[ï¿½hï¿½ï¿½ï¿½e:
+    - ï¿½Vï¿½iï¿½ï¿½ï¿½lï¿½Ì”ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÚŽwï¿½ï¿½ï¿½Nï¿½Iï¿½ï¿½ï¿½eï¿½B
+    - 2ï¿½iï¿½Kï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï‚ï¿½ï¿½ï¿½iLINE ï¿½ï¿½ ï¿½ï¿½ï¿½nï¿½j
+    - ï¿½Ë—ï¿½ï¿½mï¿½ï¿½Ü‚ÅŠï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½j
+4. POINT ï¿½Zï¿½Nï¿½Vï¿½ï¿½ï¿½ï¿½:
+    - 01 ï¿½ï¿½ï¿½ï¿½è‰˜ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½çœï¿½ï¿½
+    - 02 ï¿½lï¿½ï¿½ï¿½Ì—Ç‚ï¿½ï¿½Xï¿½^ï¿½bï¿½t
+    - 03 ï¿½eï¿½ï¿½ï¿½ï¿½ï¿½Ìƒvï¿½ï¿½ï¿½ï¿½ï¿½Î‰ï¿½
+5. CTA: ï¿½dï¿½bï¿½Ôï¿½ 052-990-3015ï¿½^ï¿½cï¿½ÆŽï¿½ï¿½ï¿½ 8:00ï¿½`22:00
+6. ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½[ï¿½hï¿½iï¿½ï¿½: ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½s3ï¿½*ï¿½Zï¿½bï¿½gï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½5ï¿½*ï¿½Zï¿½bï¿½gï¿½Aï¿½Lï¿½bï¿½`ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Wï¿½tï¿½[ï¿½hï¿½Zï¿½bï¿½gï¿½j
+
+## ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìƒï¿½ï¿½ï¿½
+
+- ï¿½ï¿½ï¿½ï¿½ï¿½ÌƒZï¿½Nï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½E 2ï¿½Jï¿½ï¿½ï¿½ï¿½ï¿½iï¿½eï¿½Lï¿½Xï¿½g+ï¿½æ‘œï¿½jï¿½Ü‚ï¿½ï¿½ÍƒJï¿½[ï¿½hï¿½Oï¿½ï¿½ï¿½bï¿½h
+- ï¿½wï¿½iï¿½Í’Wï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½[ + ï¿½ï¿½ï¿½Jï¿½[ï¿½hï¿½Aï¿½^ï¿½Cï¿½gï¿½ï¿½ï¿½ÍƒAï¿½Nï¿½Zï¿½ï¿½ï¿½gï¿½F (#828080/#393939) ï¿½ï¿½ Mincho ï¿½tï¿½Hï¿½ï¿½ï¿½g
+- ï¿½eï¿½Jï¿½[ï¿½h h3 ï¿½Æ–{ï¿½ï¿½ p ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½s
+- ï¿½Ç‰ï¿½ï¿½Jï¿½[ï¿½hï¿½Oï¿½ï¿½ï¿½bï¿½h(6ï¿½ï¿½)ï¿½ï¿½ `flex_list3` ï¿½ï¿½ 3ï¿½ñƒŒƒCï¿½Aï¿½Eï¿½g
+- ï¿½ï¿½vCTAï¿½iLINE/ï¿½â‚¢ï¿½ï¿½ï¿½í‚¹ï¿½{ï¿½^ï¿½ï¿½/ï¿½dï¿½bï¿½jï¿½ð•¡ï¿½ï¿½zï¿½uï¿½ï¿½ï¿½ï¿½Kï¿½vï¿½ï¿½ï¿½ï¿½

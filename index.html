@@ -1,15 +1,288 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ja">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="noindex, nofollow" />
-        <meta name="googlebot" content="noindex, nofollow" />
-        <title>tempapp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>HUA OBST | ハウスクリーニング</title>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="stylesheet" href="assets/styles.css" />
     </head>
-    <body>
-        <div id="root"></div>
-        <script type="module" src="/src/main.tsx"></script>
+    <body class="page page--home">
+        <header class="site-header">
+            <div class="container header__bar">
+                <a class="brand" href="index.html">
+                    <span class="brand__title">HUA OBST</span>
+                    <span class="brand__subtitle">ハウスクリーニング</span>
+                </a>
+                <button class="header__menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav" data-menu-toggle>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="global-nav" class="main-nav" data-menu>
+                    <ul class="main-nav__list">
+                        <li><a data-menu-link href="index.html">トップページ</a></li>
+                        <li><a data-menu-link href="air-conditioner.html">エアコンお掃除</a></li>
+                        <li><a data-menu-link href="kitchen.html">キッチンお掃除</a></li>
+                        <li><a data-menu-link href="washing-machine.html">洗濯機お掃除</a></li>
+                        <li><a data-menu-link href="other-plans.html">その他のプラン</a></li>
+                        <li><a data-menu-link href="set-plans.html">まとめてプラン</a></li>
+                    </ul>
+                    <div class="header__cta">
+                        <span>受付 8:00〜22:00</span>
+                        <strong><a href="tel:0529903015">052-990-3015</a></strong>
+                    </div>
+                </nav>
+            </div>
+            <div class="header__backdrop" data-backdrop></div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container hero__inner">
+                    <div class="hero__content">
+                        <p class="pill">名古屋・愛知の出張お掃除</p>
+                        <h1>
+                            安さだけで業者を選んでいませんか？
+                            <br />
+                            適正価格で安心のハウスクリーニングを
+                        </h1>
+                        <p>水回りからエアコンまで。プライベートゾーンに入る仕事だからこそ、身だしなみとマナー、技術のすべてで応えます。</p>
+                        <div class="hero__actions">
+                            <a class="btn" href="tel:0529903015">電話で相談する</a>
+                            <a class="btn btn--ghost" href="https://lin.ee/RZedPno" target="_blank" rel="noreferrer">LINEで問い合わせ</a>
+                        </div>
+                    </div>
+                    <div class="hero__media">
+                        <img src="/images/hero.jpg" alt="ハウスクリーニングの様子" loading="lazy" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="lead">
+                <div class="container lead__body">
+                    <div class="lead__panel">
+                        <p class="pill">私たちについて</p>
+                        <h3>地域密着で「頼んでよかった」を積み重ねています</h3>
+                        <p>名古屋市守山区を拠点に、戸建・マンション・店舗まで幅広く対応。女性スタッフ同伴も可能で、初めての方にも安心してお任せいただいています。</p>
+                    </div>
+                    <div class="lead__panel">
+                        <p class="pill">対応メニュー</p>
+                        <h3>水回り・エアコン・洗濯機をまとめてリセット</h3>
+                        <p>レンジフード、キッチン、浴室、洗面台、トイレ、各種エアコン、ドラム式洗濯機まで。単品もまとめてプランも柔軟にご提案します。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="strengths">
+                <div class="container">
+                    <header class="section-heading">
+                        <p class="pill">STRENGTH</p>
+                        <h2>ハウオブストが選ばれる理由</h2>
+                        <p>価格だけでなく「人柄」と「仕上がり」へのこだわりを評価いただいています。</p>
+                    </header>
+                    <div class="features__grid">
+                        <article class="card">
+                            <img src="/images/feature-1.jpg" alt="丁寧なクリーニング" loading="lazy" />
+                            <h3>徹底洗浄で根本からキレイ</h3>
+                            <p>エコ洗剤と高圧洗浄を使い分け、汚れの原因から取り除きます。素材に合わせた洗浄で傷をつけません。</p>
+                        </article>
+                        <article class="card">
+                            <img src="/images/feature-2.jpg" alt="人柄重視のスタッフ" loading="lazy" />
+                            <h3>人柄重視のスタッフが訪問</h3>
+                            <p>お客様のプライベートに入る仕事だからこそ、マナー・清潔感・説明力を重視。女性スタッフの同行も可能です。</p>
+                        </article>
+                        <article class="card">
+                            <img src="/images/feature-3.jpg" alt="迅速な対応" loading="lazy" />
+                            <h3>柔軟でスピーディーな対応</h3>
+                            <p>LINE・電話でスピード回答。日程調整や追加のご要望にもできる限り即日対応します。</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="points">
+                <div class="container">
+                    <header class="section-heading">
+                        <p class="pill">POINT</p>
+                        <h2>お客様の不安に向き合う3つの約束</h2>
+                        <p>安全な洗剤選び、立ち会い時のマナー、作業前後の写真共有を徹底します。</p>
+                    </header>
+                    <div class="points__grid">
+                        <article class="card">
+                            <img src="/images/point-1.jpg" alt="水回り汚れの除去" loading="lazy" />
+                            <div>
+                                <span class="tag">POINT 01</span>
+                                <h3>水回りのしつこい汚れを根本除去</h3>
+                                <p>水アカ・カビ・皮脂汚れを原因から洗浄。防カビ仕上げでキレイが長持ちします。</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="/images/point-2.jpg" alt="安心のスタッフ" loading="lazy" />
+                            <div>
+                                <span class="tag">POINT 02</span>
+                                <h3>人柄と説明力を重視した対応</h3>
+                                <p>作業手順と所要時間を事前にご案内。お子さま・ペットがいるご家庭でも安心していただけるよう配慮します。</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="/images/point-3.jpg" alt="専門スタッフ" loading="lazy" />
+                            <div>
+                                <span class="tag">POINT 03</span>
+                                <h3>専門スタッフが最後までフォロー</h3>
+                                <p>エアコン・水回り・洗濯機ごとに担当を設定。作業後の使い方アドバイスまできちんとお伝えします。</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-cta">
+                <div class="container">
+                    <div class="cta">
+                        <div>
+                            <p class="pill">CONTACT</p>
+                            <h3>まずはお気軽にご相談ください</h3>
+                            <p>追加料金なしの明朗会計。ご希望の日時と気になる場所をお知らせいただければ最適なプランをご提案します。</p>
+                        </div>
+                        <div class="cta__actions">
+                            <a class="btn" href="tel:0529903015">052-990-3015 に電話</a>
+                            <a class="btn btn--ghost" href="https://lin.ee/RZedPno" target="_blank" rel="noreferrer">LINEで問い合わせ</a>
+                            <a class="btn btn--ghost" href="https://www.instagram.com/huaobst.2021/" target="_blank" rel="noreferrer">Instagramを見る</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing">
+                <div class="container">
+                    <header class="section-heading">
+                        <p class="pill">PLAN</p>
+                        <h2>人気のクリーニングプラン</h2>
+                        <p>組み合わせ自由。単品よりお得なセットもご用意しています。</p>
+                    </header>
+                    <div class="plan__grid">
+                        <article class="card">
+                            <img src="/images/plan-1.jpg" alt="お掃除代行3点セット" loading="lazy" />
+                            <div>
+                                <span class="badge">大掃除に人気</span>
+                                <h3>お掃除代行3点セット</h3>
+                                <p>レンジフード・浴室・キッチンの3点をまとめてリセット。油汚れと水アカを徹底除去します。</p>
+                                <p class="plan-card__price">32,800円（税込）〜</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="/images/plan-2.jpg" alt="水回り5点セット" loading="lazy" />
+                            <div>
+                                <span class="badge">まとめてお得</span>
+                                <h3>水回り5点セット</h3>
+                                <p>レンジフード・キッチン・浴室・洗面台・トイレのフルセット。入居前後や季節の切り替えに。</p>
+                                <p class="plan-card__price">46,800円（税込）〜</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="/images/plan-3.jpg" alt="エアコン+レンジフードセット" loading="lazy" />
+                            <div>
+                                <span class="badge">人気No.1</span>
+                                <h3>エアコン＋レンジフード</h3>
+                                <p>エアコン1台とレンジフードの組み合わせ。カビと油のダブル対策で室内の空気もクリーンに。</p>
+                                <p class="plan-card__price">25,800円（税込）〜</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <div class="container">
+                    <header class="section-heading">
+                        <p class="pill">WORKS</p>
+                        <h2>仕上がりのイメージ</h2>
+                        <p>清潔さと使いやすさを両立する仕上げを心がけています。</p>
+                    </header>
+                    <div class="gallery__grid">
+                        <article class="grid-card">
+                            <img src="/images/grid-1.jpg" alt="浴室クリーニング" loading="lazy" />
+                            <div class="grid-card__body">
+                                <h3>浴室のカビ・水アカを徹底洗浄</h3>
+                                <p>防カビ仕上げで嫌なニオイも抑制します。</p>
+                            </div>
+                        </article>
+                        <article class="grid-card">
+                            <img src="/images/grid-2.jpg" alt="レンジフードクリーニング" loading="lazy" />
+                            <div class="grid-card__body">
+                                <h3>レンジフード内部の油汚れを分解</h3>
+                                <p>分解洗浄で換気効率もアップ。</p>
+                            </div>
+                        </article>
+                        <article class="grid-card">
+                            <img src="/images/grid-3.jpg" alt="キッチンシンクの仕上げ" loading="lazy" />
+                            <div class="grid-card__body">
+                                <h3>シンクのくすみをリセット</h3>
+                                <p>傷をつけずに輝きを取り戻します。</p>
+                            </div>
+                        </article>
+                        <article class="grid-card">
+                            <img src="/images/grid-4.jpg" alt="エアコン内部洗浄" loading="lazy" />
+                            <div class="grid-card__body">
+                                <h3>エアコン内部のカビを高圧洗浄</h3>
+                                <p>アレルゲンを抑えて空気をクリーンに。</p>
+                            </div>
+                        </article>
+                        <article class="grid-card">
+                            <img src="/images/grid-5.jpg" alt="洗面台クリーニング" loading="lazy" />
+                            <div class="grid-card__body">
+                                <h3>水垢と石けんカスを除去</h3>
+                                <p>毎日使う場所だからこそ清潔に。</p>
+                            </div>
+                        </article>
+                        <article class="grid-card">
+                            <img src="/images/grid-6.jpg" alt="鏡やガラスの仕上げ" loading="lazy" />
+                            <div class="grid-card__body">
+                                <h3>鏡・ガラスのくもり除去</h3>
+                                <p>クリアな視界で気持ちのよい空間へ。</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer__inner">
+                <div>
+                    <div class="brand">
+                        <span class="brand__title">HUA OBST</span>
+                        <span class="brand__subtitle">ハウスクリーニング</span>
+                    </div>
+                    <p>愛知県名古屋市守山区大森三丁目609番地1</p>
+                    <p>TEL: <a href="tel:0529903015">052-990-3015</a></p>
+                </div>
+                <div class="footer__nav">
+                    <h3>メニュー</h3>
+                    <ul>
+                        <li><a href="index.html">トップページ</a></li>
+                        <li><a href="air-conditioner.html">エアコンお掃除</a></li>
+                        <li><a href="kitchen.html">キッチンお掃除</a></li>
+                        <li><a href="washing-machine.html">洗濯機お掃除</a></li>
+                        <li><a href="other-plans.html">その他のプラン</a></li>
+                        <li><a href="set-plans.html">まとめてプラン</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h3>ご案内</h3>
+                    <ul>
+                        <li><a href="tel:0529903015">電話で問い合わせ</a></li>
+                        <li><a href="https://lin.ee/RZedPno" target="_blank" rel="noreferrer">LINEで問い合わせ</a></li>
+                        <li><a href="https://www.instagram.com/huaobst.2021/" target="_blank" rel="noreferrer">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <small>Copyright &copy; HUA OBST All Rights Reserved.</small>
+            </div>
+        </footer>
+
+        <script src="assets/main.js"></script>
     </body>
 </html>

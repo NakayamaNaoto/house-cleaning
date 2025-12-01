@@ -1,27 +1,25 @@
-# 55 リフォーム名古屋店 | お掃除代行 LP (React + Vite)
+# HUA OBST ハウスクリーニング（静的版）
 
-指定サイト（https://huaobst.jp/55reform/osoujidaikou/）の構成を React + TypeScript + Vite で再現したランディングページです。  
-Shippori Mincho をベースに、ヒーロー・特徴紹介・料金プラン・CTA などのセクションをデータ駆動で描画しています。
+React/Vite 版から純粋な HTML + CSS + 最小限の JS に置き換えた静的ランディングページです。`index.html` を含む各ページをブラウザで開くだけで閲覧できます。
 
-## プロジェクト構成
+## 構成
 
--   `src/components/layout` … ヘッダー／フッターなどのレイアウトコンポーネント
--   `src/components/sections` … ヒーロー、強み、POINT、CTA、料金、カードグリッド等のセクション
--   `src/data/content.ts` … 文言・画像パス・ナビゲーションなどの定義
--   `public/images` … 元サイトから取得した写真素材（hero/feature/point/plan/grid）
--   `docs/` … サイト解析メモとコンテンツプラン
+- `index.html` … トップページ
+- `air-conditioner.html` … エアコンクリーニング
+- `kitchen.html` … キッチンクリーニング
+- `washing-machine.html` … 洗濯機クリーニング
+- `other-plans.html` … その他単品メニュー
+- `set-plans.html` … まとめてプラン
+- `assets/styles.css` … 共通スタイル
+- `assets/main.js` … ハンバーガーメニューの開閉スクリプト
+- `images/` … 画像アセット
 
-## セットアップ
+## 使い方
 
-```bash
-npm install
-npm run dev    # http://localhost:5173 で開発サーバーを起動
-npm run build  # 本番ビルド
-npm run preview
-```
+1. 任意の静的サーバー（例: `npx serve .`）またはファイルを直接ブラウザで開いて表示してください。
+2. ナビゲーションのリンクは各 HTML ファイルに直接張り替え済みです。
 
-## 実装メモ
+## 開発メモ
 
--   `App.tsx` で各セクションを組み合わせ、`src/index.css` に共通変数・タイポグラフィ・レスポンシブ指針を定義
--   画像は `public/images` 配下に配置し、`/images/...` 参照でバンドルから除外
--   メタタグで `noindex,nofollow` を付与済み。ローカルで静的サーバー経由（`npm run preview` など）で表示するとビルド成果物を確認できます。
+- 依存は Prettier のみです。整形は `npm run format` を実行してください（`printWidth: 8000`, `tabWidth: 4`）。
+- JavaScript はモバイル用メニューの開閉のみを担当し、その他はすべて HTML/CSS で完結しています。
