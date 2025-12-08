@@ -225,6 +225,7 @@ body {
 .hero {
     position: relative;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .hero-image {
