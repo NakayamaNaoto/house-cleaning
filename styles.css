@@ -135,8 +135,17 @@ body {
 
 .menu-close-row {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
     padding: 6px 10px 4px;
+}
+
+.menu-panel-title {
+    font-weight: 700;
+    color: #1d7c31;
+    font-size: 15px;
+    letter-spacing: 0.2px;
 }
 
 .menu-close-button {
