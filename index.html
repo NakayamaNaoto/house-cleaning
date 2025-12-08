@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="noindex, nofollow" />
-        <meta name="googlebot" content="noindex, nofollow" />
-        <title>tempapp</title>
+        <title>Hello Page</title>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div id="root"></div>
-        <script type="module" src="/src/main.tsx"></script>
+        <header class="site-header">
+            <div class="header-top">
+                <div class="logo-block">
+                    <div class="logo-icon" aria-hidden="true">
+                        <img class="cherry" src="images/55gym.png" alt="" />
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <a class="line-button" href="#" aria-label="LINEで簡単相談"> LINEで簡単相談 </a>
+                    <div class="qr-placeholder" aria-label="QRコード">
+                        <span class="qr-inner">QR</span>
+                    </div>
+                    <button class="menu-button" type="button" aria-label="メニューを開く">
+                        <span class="menu-lines" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span class="menu-label">MENU</span>
+                    </button>
+                </div>
+            </div>
+            <nav class="header-nav" aria-label="主要メニュー">
+                <a href="#">エアコン</a>
+                <a href="#">キッチン</a>
+                <a href="#">洗濯機</a>
+                <a href="#">その他プラン</a>
+                <a href="#">まとめてプラン</a>
+            </nav>
+        </header>
+        <main class="page"></main>
     </body>
 </html>
