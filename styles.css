@@ -18,6 +18,7 @@ body {
     justify-content: space-between;
     padding: 18px 24px 14px;
     gap: 24px;
+    position: relative;
 }
 
 .logo-block {
@@ -132,6 +133,34 @@ body {
     z-index: 10;
 }
 
+.menu-close-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px 10px 4px;
+}
+
+.menu-close-button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #d0d0d0;
+    background-color: #f6f6f6;
+    color: #1d7c31;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.menu-close-button:hover {
+    background-color: #eef6ef;
+}
+
+.menu-close-button:focus-visible {
+    outline: 2px solid #2d7c35;
+    outline-offset: 2px;
+}
+
 .menu-list {
     list-style: none;
     margin: 0;
@@ -240,7 +269,6 @@ body {
 
 @media (max-width: 960px) {
     .header-top {
-        flex-wrap: wrap;
         justify-content: center;
         text-align: center;
     }
@@ -253,9 +281,14 @@ body {
         display: none;
     }
 
+    .menu-wrapper {
+        position: static;
+    }
+
     .menu-panel {
-        right: 50%;
-        transform: translateX(50%);
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
         width: min(360px, calc(100vw - 48px));
     }
 
