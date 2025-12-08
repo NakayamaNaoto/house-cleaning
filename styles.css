@@ -35,9 +35,11 @@ body {
     justify-content: center;
 }
 
-.cherry {
+.logo-icon img,
+.logo-icon svg {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .header-actions {
@@ -66,13 +68,7 @@ body {
 }
 
 .qr-placeholder {
-    width: 88px;
-    height: 88px;
-    border: 4px solid #2b2b2b;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-image: repeating-linear-gradient(45deg, #eaeaea 0 6px, #ffffff 6px 12px);
+    display: none;
 }
 
 .qr-inner {
@@ -155,8 +151,6 @@ body {
     }
 
     .header-nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        row-gap: 12px;
+        display: none;
     }
 }
