@@ -303,4 +303,13 @@ body {
         left: 12px;
         bottom: 24px;
     }
+
+    .hero {
+        aspect-ratio: 3 / 4;
+    }
+
+    .hero-image {
+        height: 100%;
+        object-fit: cover;
+    }
 }
