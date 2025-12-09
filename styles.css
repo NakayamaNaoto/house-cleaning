@@ -216,15 +216,6 @@ body {
     color: #0f6325;
 }
 
-.page {
-    /* margin: 0px auto; */
-    /* max-width: 1280px; */
-}
-.aaaaaaaaa {
-    /* max-width: 1280px;
-    margin: 0px auto; */
-}
-
 .hero {
     position: relative;
     overflow: hidden;
@@ -289,7 +280,7 @@ body {
     background-color: #f9f9f9;
 }
 
-.bbbbbbbb {
+.strong-point-container {
     max-width: 1280px;
     margin: 0px auto;
 }
@@ -343,6 +334,7 @@ body {
     .header-top {
         justify-content: center;
         text-align: center;
+        justify-content: space-between;
     }
 
     .header-actions {
