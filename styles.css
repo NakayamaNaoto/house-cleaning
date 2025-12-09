@@ -206,7 +206,7 @@ body {
 .header-nav a {
     color: #1d7c31;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
     text-decoration: none;
     letter-spacing: 0.4px;
     white-space: nowrap;
@@ -275,6 +275,20 @@ body {
     text-decoration: none;
     border-radius: 8px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.16);
+}
+
+.strong-point-title-key-message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #1d7c31;
+}
+
+.strong-point-title-sub-message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #4d4d4d;
 }
 
 @media (max-width: 960px) {
