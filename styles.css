@@ -409,6 +409,117 @@ body {
     margin-top: 0;
 }
 
+.menu-set-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin: 28px 12px 0;
+    align-items: stretch;
+}
+
+.menu-card {
+    background-color: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ededed;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 26px 58px rgba(0, 0, 0, 0.12);
+}
+
+.menu-card-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 12px 12px 10px;
+    background: linear-gradient(180deg, #fafafa 0%, #f4f4f4 100%);
+    border-bottom: 1px solid #ededed;
+}
+
+.menu-card-gallery img {
+    width: 100%;
+    height: 104px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    background-color: #e8e8e8;
+}
+
+.menu-card-body {
+    padding: 20px 22px 12px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.menu-card-label {
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #e7f4e8;
+    color: #1d7c31;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+}
+
+.menu-card-title {
+    margin: 0;
+    color: #1d7c31;
+    font-size: 22px;
+}
+
+.menu-card-description {
+    margin: 0;
+    line-height: 1.9;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
+.menu-card-note {
+    margin: 0;
+    color: #6a6a6a;
+    font-size: 14px;
+}
+
+.menu-card-pricing {
+    padding: 8px 22px 22px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    border-top: 1px solid #f1f1f1;
+}
+
+.menu-card-price-original {
+    color: #4d4d4d;
+    font-weight: 700;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.menu-card-price-divider {
+    color: #8f8f8f;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.menu-card-price-current {
+    color: #e53935;
+    font-weight: 800;
+    font-size: 26px;
+    letter-spacing: 0.6px;
+}
+
 @media (max-width: 960px) {
     .header-top {
         justify-content: center;
@@ -480,5 +591,15 @@ body {
 
     .reason-to-select-us-image {
         width: 100%;
+    }
+
+    .menu-set-list {
+        grid-template-columns: 1fr;
+        margin: 20px 0 0;
+        gap: 24px;
+    }
+
+    .menu-card-gallery img {
+        height: 96px;
     }
 }
