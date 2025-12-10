@@ -515,9 +515,18 @@ body {
 
 .menu-card-price-current {
     color: #e53935;
+    letter-spacing: 0.6px;
+}
+
+.menu-card-price-current-emphasis {
     font-weight: 800;
     font-size: 26px;
     letter-spacing: 0.6px;
+}
+
+.menu-card-price-current-tax {
+    color: #333333;
+    font-weight: bold;
 }
 
 @media (max-width: 960px) {
