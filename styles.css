@@ -429,7 +429,9 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid #ededed;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .menu-card:hover {
@@ -533,6 +535,120 @@ body {
     font-weight: bold;
 }
 
+.contact-section {
+    padding: 36px 0 60px;
+    background-color: #ffffff;
+}
+
+.contact-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.contact-option {
+    border-radius: 12px;
+    padding: 18px 16px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-option-heading {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.contact-option-subheading {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.contact-option-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    color: #0f6b30;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.08);
+    transition:
+        transform 0.12s ease,
+        box-shadow 0.12s ease;
+}
+
+.contact-option-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.16);
+}
+
+.contact-option-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+}
+
+.contact-option-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.contact-option-mail {
+    background-color: #c3cf00;
+}
+
+.contact-option-line {
+    background-color: #50b95a;
+}
+
+.contact-option-line-icon {
+    width: 30px;
+    height: 28px;
+}
+
+.contact-message {
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    color: #4b4b4b;
+}
+
+.contact-message-lead {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.contact-message-line {
+    color: #00b900;
+}
+
+.contact-message-free {
+    color: #e53935;
+}
+
+.contact-message p {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
 @media (max-width: 960px) {
     .header-top {
         justify-content: center;
@@ -614,5 +730,13 @@ body {
 
     .menu-card-gallery img {
         height: 96px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-option {
+        text-align: center;
     }
 }
