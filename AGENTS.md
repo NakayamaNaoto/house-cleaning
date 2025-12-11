@@ -1,15 +1,22 @@
-# Repository Guidelines
+# 概要
 
-## Project Structure
+ハウスクリーニングの LP を作成するプロジェクトです。
 
--   Please format the code at the end using the `Prettier` package.
-    -   Please use the `"prettier.printWidth": 8000` option.
+# リポジトリガイドライン
 
-## Coding Guidelines
+## プロジェクト構成
 
--   Use 4 spaces for indentation.
--   Use UTF-8 encoding for all source files.
+-   LP は HTML, CSS, JavaScript で構成してください。
+-   style は HTML に直接書かず、CSS ファイルに書いてください。
+-   最後に `Prettier` パッケージを使用してコードをフォーマットしてください。
+    -   `"prettier.printWidth": 8000` オプションを使用してください。
 
-## Response
+## コーディングガイドライン
 
-Please provide all answers in Japanese.
+-   インデントには 4 スペースを使用してください。
+-   すべてのソースファイルには UTF-8 エンコーディングを使用してください。
+-   HTML ファイルに
+
+## 回答
+
+-   すべての回答は日本語で提供してください。
