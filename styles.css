@@ -403,6 +403,10 @@ body {
     color: #4d4d4d;
 }
 
+.menu-set {
+    margin: 40px 0 0;
+}
+
 .menu-set h1 {
     text-align: center;
     color: #1d7c31;
