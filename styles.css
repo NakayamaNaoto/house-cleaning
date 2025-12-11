@@ -812,6 +812,10 @@ body {
         gap: 24px;
     }
 
+    .menu-card {
+        margin: 0 10px;
+    }
+
     .menu-card-gallery img {
         height: 96px;
     }
