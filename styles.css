@@ -429,9 +429,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid #ededed;
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .menu-card:hover {
@@ -585,9 +583,7 @@ body {
     font-weight: 800;
     font-size: 15px;
     box-shadow: 0 5px 0 rgba(0, 0, 0, 0.08);
-    transition:
-        transform 0.12s ease,
-        box-shadow 0.12s ease;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
 .contact-option-button:hover {
@@ -647,6 +643,90 @@ body {
     margin: 0;
     line-height: 1.8;
     font-size: 16px;
+}
+
+.site-footer {
+    background-color: #f4f4f4;
+    padding: 36px 0 44px;
+}
+
+.footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.footer-brand img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.footer-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: #e53935;
+    letter-spacing: 0.4px;
+}
+
+.footer-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px 40px;
+    align-items: start;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: 800;
+    color: #444444;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 15px;
+    color: #4d4d4d;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #444444;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 960px) {
@@ -738,5 +818,18 @@ body {
 
     .contact-option {
         text-align: center;
+        margin: 0 20px;
+    }
+
+    .footer-inner {
+        text-align: center;
+    }
+
+    .footer-column {
+        align-items: center;
+    }
+
+    .footer-links {
+        align-items: center;
     }
 }
