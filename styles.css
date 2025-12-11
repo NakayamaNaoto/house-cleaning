@@ -547,6 +547,10 @@ body {
     align-items: stretch;
 }
 
+.reason-to-select-us .contact-container {
+    max-width: 700px;
+}
+
 .contact-option {
     border-radius: 12px;
     padding: 18px 16px 22px;
@@ -806,6 +810,10 @@ body {
         grid-template-columns: 1fr;
         margin: 20px 0 0;
         gap: 24px;
+    }
+
+    .menu-card {
+        margin: 0 10px;
     }
 
     .menu-card-gallery img {
