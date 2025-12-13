@@ -82,6 +82,7 @@
 }
 
 .form-field {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -91,7 +92,8 @@
     grid-column: 1 / -1;
 }
 
-.form-field-separate {
+.form-field-last {
+    padding-bottom: 30px;
 }
 
 .field-line {
@@ -104,11 +106,22 @@
 
 .field-line.align-start {
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .field-line .input-control {
     flex: 1;
-    width: auto;
+    width: 250px;
+}
+
+.field-line.align-start .input-control {
+    width: 100%;
+    min-width: 0;
+}
+
+.field-line.align-start .input-control-wide {
+    width: 100%;
+    min-width: 0;
 }
 
 .field-label {
@@ -131,9 +144,11 @@
 .form-block-title {
     font-size: 18px;
     font-weight: 800;
-    color: #3d3d3d;
+    color: #2d7c35;
     margin: 0 0 12px;
     letter-spacing: 0.3px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .form-label {
@@ -166,8 +181,15 @@ textarea.input-control {
     min-height: 120px;
 }
 
+.phone-availability-input {
+    width: 420px;
+    max-width: 100%;
+}
+
 .input-control-wide {
-    min-width: 500px;
+    width: 100%;
+    max-width: 600px;
+    min-width: 0;
 }
 
 .checkbox-group {
@@ -313,5 +335,68 @@ textarea.input-control {
 @media (max-width: 960px) {
     .form-action-note {
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-hero {
+        padding: 16px 0 12px;
+    }
+
+    .form-hero-inner {
+        padding: 0 14px 8px;
+    }
+
+    .form-container {
+        padding: 0 12px;
+    }
+
+    .inquiry-form {
+        padding: 18px 16px 22px;
+        gap: 16px;
+    }
+
+    .form-grid {
+        gap: 14px;
+    }
+
+    .field-line {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .field-label {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .field-line .input-control {
+        width: 90% !important;
+    }
+
+    .input-control-wide {
+        width: 90% !important;
+        min-width: 0;
+    }
+
+    .checkbox-group {
+        gap: 8px 12px;
+        max-width: 100%;
+    }
+
+    .form-actions {
+        align-items: stretch;
+    }
+
+    .form-actions .primary-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .phone-availability-input {
+        width: 100%;
     }
 }

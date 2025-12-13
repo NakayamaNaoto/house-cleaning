@@ -1,0 +1,98 @@
+.thanks-page {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f6fbf8 0%, #e9f4ec 100%);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #1f3b2c;
+}
+
+.thanks-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 32px;
+    max-width: 520px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e3ede7;
+}
+
+.thanks-logo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+}
+
+.thanks-logo {
+    width: 160px;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.12));
+}
+
+.thanks-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 800;
+    box-shadow: 0 8px 18px rgba(76, 175, 80, 0.28);
+}
+
+.thanks-title {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+}
+
+.thanks-message {
+    margin: 0 0 8px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.thanks-redirect {
+    margin: 0 0 20px;
+    font-size: 14px;
+    color: #52675a;
+}
+
+.thanks-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background-color: #4caf50;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 12px;
+    box-shadow: 0 10px 18px rgba(76, 175, 80, 0.24);
+    transition:
+        transform 0.12s ease,
+        box-shadow 0.12s ease,
+        background-color 0.12s ease;
+}
+
+.thanks-button:hover {
+    background-color: #449d48;
+    transform: translateY(-1px);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.16);
+}
+
+.thanks-button:focus-visible {
+    outline: 2px solid #1d7c31;
+    outline-offset: 2px;
+}

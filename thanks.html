@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>送信完了 | ハウスクリーニング</title>
+        <link rel="stylesheet" href="thanks.css" />
+    </head>
+    <body>
+        <main class="thanks-page" aria-labelledby="thanks-title">
+            <div class="thanks-card">
+                <a class="thanks-logo-link" href="index.html" aria-label="トップページへ戻る">
+                    <img class="thanks-logo" src="images/55gym.png" alt="55gymロゴ" />
+                </a>
+                <div class="thanks-icon" aria-hidden="true">✓</div>
+                <h1 id="thanks-title" class="thanks-title">お問い合わせありがとうございます</h1>
+                <p class="thanks-message">担当者より折り返しご連絡いたします。少々お待ちください。</p>
+                <p class="thanks-redirect">10秒後にTOPページへ自動で移動します。</p>
+                <a class="thanks-button" href="index.html">TOPページへ戻る</a>
+            </div>
+        </main>
+        <script>
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 10000);
+        </script>
+    </body>
+</html>
