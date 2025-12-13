@@ -76,6 +76,7 @@
             <section class="form-section">
                 <div class="form-container">
                     <form class="inquiry-form" id="inquiry-form" name="inquiry-form" method="POST" action="/thanks.html" netlify>
+                        <div class="form-block-title">基本情報</div>
                         <div class="form-grid">
                             <div class="form-field">
                                 <div class="field-line">
@@ -95,6 +96,13 @@
                                 <div class="field-line">
                                     <label class="field-label" for="phone"> 電話番号 <span class="required-mark" aria-hidden="true">*</span> </label>
                                     <input id="phone" name="phone" type="tel" class="input-control" inputmode="tel" autocomplete="tel" placeholder="例：09012345678" required />
+                                </div>
+                                <p class="field-error" id="phone-error"></p>
+                            </div>
+                            <div class="form-field">
+                                <div class="field-line">
+                                    <label class="field-label" for="phone"> 電話がつながりやすい時間帯 <span class="required-mark" aria-hidden="true">*</span> </label>
+                                    <input id="phone" name="phone" type="tel" class="input-control input-control-wide" inputmode="tel" autocomplete="tel" placeholder="例：平日18時以降" required />
                                 </div>
                                 <p class="field-error" id="phone-error"></p>
                             </div>
@@ -139,58 +147,57 @@
                                 <p class="field-error" id="postal-code-error"></p>
                                 <p class="field-status" id="postal-status" aria-live="polite"></p>
                             </div>
-                            <div class="form-field">
+                            <div class="form-field form-field-last">
                                 <div class="field-line">
                                     <label class="field-label" for="address">訪問先 住所</label>
-                                    <input id="address" name="address" type="text" class="input-control" autocomplete="street-address" />
+                                    <input id="address" name="address" type="text" class="input-control input-control-wide" autocomplete="street-address" />
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-block">
-                            <div class="form-block-title">依頼内容</div>
-                            <div class="form-grid">
-                                <div class="form-field form-field-full">
-                                    <div class="field-line align-start">
-                                        <div class="field-label form-label">希望メニュー<br />（複数選択可）</div>
-                                        <div class="checkbox-group">
-                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="set" /> セットプラン</label>
-                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="hood" /> レンジフード</label>
-                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="kitchen" /> キッチン</label>
-                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="bath" /> 浴室</label>
-                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="toilet" /> トイレ</label>
-                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="vanity" /> 洗面</label>
-                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="ac" /> エアコン</label>
-                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="washer" /> 洗濯機</label>
-                                        </div>
+                        <div class="form-block-title">依頼内容</div>
+                        <div class="form-grid">
+                            <div class="form-field form-field-full">
+                                <div class="field-line align-start">
+                                    <div class="field-label form-label">希望メニュー<br />（複数選択可）</div>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-item"><input type="checkbox" name="menu" value="set" /> セットプラン</label>
+                                        <label class="checkbox-item"><input type="checkbox" name="menu" value="hood" /> レンジフード</label>
+                                        <label class="checkbox-item"><input type="checkbox" name="menu" value="kitchen" /> キッチン</label>
+                                        <label class="checkbox-item"><input type="checkbox" name="menu" value="bath" /> 浴室</label>
+                                        <label class="checkbox-item"><input type="checkbox" name="menu" value="toilet" /> トイレ</label>
+                                        <label class="checkbox-item"><input type="checkbox" name="menu" value="vanity" /> 洗面</label>
+                                        <label class="checkbox-item"><input type="checkbox" name="menu" value="ac" /> エアコン</label>
+                                        <label class="checkbox-item"><input type="checkbox" name="menu" value="washer" /> 洗濯機</label>
                                     </div>
                                 </div>
-                                <div class="form-field">
-                                    <div class="field-line">
-                                        <label class="field-label" for="quantity-notes">台数／箇所数の詳細</label>
-                                        <input id="quantity-notes" name="quantityNotes" type="text" class="input-control" placeholder="例：エアコン2台、浴室1箇所" />
+                            </div>
+                            <div class="form-field">
+                                <div class="field-line">
+                                    <label class="field-label" for="quantity-notes">台数／箇所数の詳細</label>
+                                    <input id="quantity-notes" name="quantityNotes" type="text" class="input-control" placeholder="例：エアコン2台、浴室1箇所" />
+                                </div>
+                            </div>
+                            <div class="form-field form-field-full">
+                                <div class="field-line align-start">
+                                    <div class="field-label form-label">汚れの状態<br />（複数選択可）</div>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-item"><input type="checkbox" name="dirt" value="oil" /> 油汚れ</label>
+                                        <label class="checkbox-item"><input type="checkbox" name="dirt" value="mold" /> 水垢・カビ</label>
+                                        <label class="checkbox-item"><input type="checkbox" name="dirt" value="uric" /> 尿石</label>
+                                        <label class="checkbox-item"><input type="checkbox" name="dirt" value="smell" /> 臭い</label>
                                     </div>
                                 </div>
-                                <div class="form-field form-field-full">
-                                    <div class="field-line align-start">
-                                        <div class="field-label form-label">汚れの状態<br />（複数選択可）</div>
-                                        <div class="checkbox-group">
-                                            <label class="checkbox-item"><input type="checkbox" name="dirt" value="oil" /> 油汚れ</label>
-                                            <label class="checkbox-item"><input type="checkbox" name="dirt" value="mold" /> 水垢・カビ</label>
-                                            <label class="checkbox-item"><input type="checkbox" name="dirt" value="uric" /> 尿石</label>
-                                            <label class="checkbox-item"><input type="checkbox" name="dirt" value="smell" /> 臭い</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-field form-field-full">
-                                    <div class="field-line align-start">
-                                        <label class="field-label" for="request-notes">重点的に掃除してほしい箇所・触ってほしくない箇所・希望オプション</label>
-                                        <textarea id="request-notes" name="requestNotes" rows="3" class="input-control input-control-wide" placeholder="例：鏡の水垢を優先してほしい。換気扇の分解を希望。"></textarea>
-                                    </div>
+                            </div>
+                            <div class="form-field form-field-full form-field-last">
+                                <div class="field-line align-start">
+                                    <label class="field-label" for="request-notes">重点的に掃除してほしい箇所・触ってほしくない箇所・希望オプション</label>
+                                    <textarea id="request-notes" name="requestNotes" rows="3" class="input-control input-control-wide" placeholder="例：鏡の水垢を優先してほしい。換気扇の分解を希望。"></textarea>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="form-block-title">その他</div>
                         <div class="form-grid">
                             <div class="form-field">
                                 <div class="field-line">
@@ -224,7 +231,7 @@
                             <div class="form-field">
                                 <div class="field-line align-start">
                                     <label class="field-label" for="additional-notes">その他ご要望</label>
-                                    <textarea id="additional-notes" name="additionalNotes" rows="3" class="input-control input-control-wide" placeholder="連絡が取りやすい時間帯など"></textarea>
+                                    <textarea id="additional-notes" name="additionalNotes" rows="3" class="input-control input-control-wide" placeholder=""></textarea>
                                 </div>
                             </div>
                         </div>

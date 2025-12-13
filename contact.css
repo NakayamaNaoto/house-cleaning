@@ -91,7 +91,8 @@
     grid-column: 1 / -1;
 }
 
-.form-field-separate {
+.form-field-last {
+    padding-bottom: 30px;
 }
 
 .field-line {
@@ -108,7 +109,7 @@
 
 .field-line .input-control {
     flex: 1;
-    width: auto;
+    width: 250px;
 }
 
 .field-label {
@@ -131,9 +132,11 @@
 .form-block-title {
     font-size: 18px;
     font-weight: 800;
-    color: #3d3d3d;
+    color: #2d7c35;
     margin: 0 0 12px;
     letter-spacing: 0.3px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .form-label {
