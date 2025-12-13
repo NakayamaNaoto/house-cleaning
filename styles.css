@@ -429,9 +429,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid #ededed;
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .menu-card:hover {
@@ -589,9 +587,7 @@ body {
     font-weight: 800;
     font-size: 15px;
     box-shadow: 0 5px 0 rgba(0, 0, 0, 0.08);
-    transition:
-        transform 0.12s ease,
-        box-shadow 0.12s ease;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
 .contact-option-button:hover {
