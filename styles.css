@@ -131,6 +131,10 @@ body {
     min-width: 280px;
     padding: 8px 0;
     z-index: 10;
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 12px 0;
 }
 
 .menu-close-row {
@@ -753,10 +757,14 @@ body {
     }
 
     .menu-panel {
+        position: fixed;
+        top: calc(120px + env(safe-area-inset-top, 0px));
         left: 50%;
         right: auto;
         transform: translateX(-50%);
-        width: min(360px, calc(100vw - 48px));
+        width: min(420px, calc(100vw - 24px));
+        max-height: calc(100vh - 140px);
+        margin-top: 0;
     }
 
     .hero-copy {
