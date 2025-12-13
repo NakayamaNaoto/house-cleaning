@@ -68,8 +68,7 @@
                     <div class="form-hero-copy">
                         <p class="form-hero-badge">最短当日・翌日対応</p>
                         <h1 class="form-hero-title">ハウスクリーニングのお問い合わせ</h1>
-                        <p class="form-hero-lead">お名前とフリガナ、どこで知ったか、そして電話番号またはメールアドレスのいずれかを入力してください。</p>
-                        <p class="form-hero-lead">郵便番号から自動で住所を補完できます。</p>
+                        <p class="form-hero-lead">お名前や電話番号などをご入力ください。</p>
                         <p class="form-hero-note">必須項目は <span class="required-mark" aria-hidden="true">*</span> で表示しています。</p>
                     </div>
                 </div>
@@ -94,23 +93,15 @@
                             </div>
                             <div class="form-field">
                                 <div class="field-line">
-                                    <label class="field-label" for="phone">
-                                        電話番号 <span class="required-mark" aria-hidden="true">*</span>
-                                        <br />
-                                        <span class="field-note inline-note">（電話番号かメールアドレスのいずれか必須）</span>
-                                    </label>
-                                    <input id="phone" name="phone" type="tel" class="input-control" inputmode="tel" autocomplete="tel" placeholder="例：09012345678" />
+                                    <label class="field-label" for="phone"> 電話番号 <span class="required-mark" aria-hidden="true">*</span> </label>
+                                    <input id="phone" name="phone" type="tel" class="input-control" inputmode="tel" autocomplete="tel" placeholder="例：09012345678" required />
                                 </div>
                                 <p class="field-error" id="phone-error"></p>
                             </div>
                             <div class="form-field">
                                 <div class="field-line">
-                                    <label class="field-label" for="email">
-                                        メールアドレス <span class="required-mark" aria-hidden="true">*</span>
-                                        <br />
-                                        <span class="field-note inline-note">（電話番号かメールアドレスのいずれか必須）</span>
-                                    </label>
-                                    <input id="email" name="email" type="email" class="input-control" autocomplete="email" placeholder="例：sample@example.com" />
+                                    <label class="field-label" for="email"> メールアドレス <span class="required-mark" aria-hidden="true">*</span> </label>
+                                    <input id="email" name="email" type="email" class="input-control" autocomplete="email" placeholder="例：sample@example.com" required />
                                 </div>
                                 <p class="field-error" id="email-error"></p>
                             </div>
@@ -220,21 +211,6 @@
                                     <input id="purpose-notes" name="purposeNotes" type="text" class="input-control input-control-wide" placeholder="例：実家に帰省する前にまとめて清掃したい" />
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="form-field form-field-full">
-                            <div class="field-line align-start">
-                                <div class="field-label form-label">どこで知ったか <span class="required-mark" aria-hidden="true">*</span></div>
-                                <div class="checkbox-group">
-                                    <label class="checkbox-item"><input type="checkbox" name="howKnown" value="sns" /> SNS</label>
-                                    <label class="checkbox-item"><input type="checkbox" name="howKnown" value="ads" /> 広告</label>
-                                    <label class="checkbox-item"><input type="checkbox" name="howKnown" value="search" /> 検索</label>
-                                    <label class="checkbox-item"><input type="checkbox" name="howKnown" value="referral" /> 紹介</label>
-                                    <label class="checkbox-item"><input type="checkbox" name="howKnown" value="repeat" /> リピート</label>
-                                    <label class="checkbox-item"><input type="checkbox" name="howKnown" value="repeat" /> その他</label>
-                                </div>
-                            </div>
-                            <p class="field-error" id="how-known-error"></p>
                         </div>
 
                         <div class="form-grid">
@@ -472,9 +448,13 @@
                         hasError = true;
                     }
 
-                    if (!phoneValue && !emailValue) {
-                        setFieldError("phone", "電話番号またはメールアドレスのいずれかを入力してください。");
-                        setFieldError("email", "電話番号またはメールアドレスのいずれかを入力してください。");
+                    if (!phoneValue) {
+                        setFieldError("phone", "電話番号を入力してください。");
+                        hasError = true;
+                    }
+
+                    if (!emailValue) {
+                        setFieldError("email", "メールアドレスを入力してください。");
                         hasError = true;
                     }
 
@@ -490,11 +470,6 @@
 
                     if (postalValue && !postalPattern.test(postalValue)) {
                         setFieldError("postalCode", "郵便番号は7桁の数字で入力してください。");
-                        hasError = true;
-                    }
-
-                    if (!howKnownChecked.length) {
-                        setFieldError("howKnown", "どこで知ったかを選択してください。");
                         hasError = true;
                     }
 
