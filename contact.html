@@ -76,7 +76,7 @@
             </section>
             <section class="form-section">
                 <div class="form-container">
-                    <form class="inquiry-form" id="inquiry-form" method="POST" novalidate netlify>
+                    <form class="inquiry-form" id="inquiry-form" name="inquiry-form" method="POST" netlify>
                         <div class="form-grid">
                             <div class="form-field">
                                 <div class="field-line">
@@ -506,16 +506,16 @@
                     return !hasError;
                 };
 
-                form.addEventListener("submit", (event) => {
-                    event.preventDefault();
-                    const isValid = validateForm();
-                    if (!isValid) return;
+                // form.addEventListener("submit", (event) => {
+                //     event.preventDefault();
+                //     const isValid = validateForm();
+                //     if (!isValid) return;
 
-                    if (formStatus) {
-                        formStatus.textContent = "送信を受け付けました。担当者よりご連絡いたします。（デモ送信）";
-                        formStatus.classList.add("form-status-success");
-                    }
-                });
+                //     if (formStatus) {
+                //         formStatus.textContent = "送信を受け付けました。担当者よりご連絡いたします。";
+                //         formStatus.classList.add("form-status-success");
+                //     }
+                // });
             })();
         </script>
     </body>
