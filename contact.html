@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>お問い合わせ | ハウスクリーニング</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="contact.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-top">
+                <div class="logo-block">
+                    <div class="logo-icon">
+                        <a class="logo-link" href="/index.html" aria-label="トップページへ移動">
+                            <img class="cherry" src="images/55gym.png" alt="55gymロゴ" />
+                        </a>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <a class="line-button" href="https://line.me/R/ti/p/@620zvxes" aria-label="LINEで相談する">LINEで相談</a>
+                    <div class="menu-wrapper">
+                        <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-menu">
+                            <span class="menu-lines" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="menu-label">MENU</span>
+                        </button>
+                        <nav class="menu-panel" id="global-menu" aria-label="グローバルメニュー" hidden>
+                            <div class="menu-close-row">
+                                <span class="menu-panel-title">メニュー一覧</span>
+                                <button class="menu-close-button" type="button" aria-label="メニューを閉じる">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <ul class="menu-list">
+                                <li><a href="/index.html">トップページ</a></li>
+                                <li><a href="#">エアコンクリーニング</a></li>
+                                <li><a href="#">キッチンクリーニング</a></li>
+                                <li><a href="#">浴室クリーニング</a></li>
+                                <li><a href="#">水回りセットプラン</a></li>
+                                <li><a href="#">定期清掃プラン</a></li>
+                                <li><a href="#">新着情報</a></li>
+                                <li><a href="#">55Reformのハウスクリーニング</a></li>
+                                <li><a href="#">ブログ記事</a></li>
+                                <li><a href="#">法人のお客様向け</a></li>
+                                <li><a href="#">55Reform パートナー募集</a></li>
+                                <li><a href="#">お問い合わせ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <nav class="header-nav" aria-label="主要メニュー">
+                <a href="#">エアコン</a>
+                <a href="#">キッチン</a>
+                <a href="#">浴室</a>
+                <a href="#">水回りセット</a>
+                <a href="#">定期清掃</a>
+            </nav>
+        </header>
+        <main class="page">
+            <section class="form-hero">
+                <div class="form-hero-inner">
+                    <div class="form-hero-copy">
+                        <p class="form-hero-badge">最短当日・翌日対応</p>
+                        <h1 class="form-hero-title">ハウスクリーニングのお問い合わせ</h1>
+                        <p class="form-hero-lead">お名前とフリガナ、どこで知ったか、そして電話番号またはメールアドレスのいずれかを入力してください。</p>
+                        <p class="form-hero-lead">郵便番号から自動で住所を補完できます。</p>
+                        <p class="form-hero-note">必須項目は <span class="required-mark" aria-hidden="true">*</span> で表示しています。</p>
+                    </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <div class="form-container">
+                    <form class="inquiry-form" id="inquiry-form" method="POST" novalidate netlify>
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <div class="field-line">
+                                    <label class="field-label" for="name">お名前 <span class="required-mark" aria-hidden="true">*</span></label>
+                                    <input id="name" name="name" type="text" class="input-control" autocomplete="name" />
+                                </div>
+                                <p class="field-error" id="name-error"></p>
+                            </div>
+                            <div class="form-field">
+                                <div class="field-line">
+                                    <label class="field-label" for="furigana">フリガナ <span class="required-mark" aria-hidden="true">*</span></label>
+                                    <input id="furigana" name="furigana" type="text" class="input-control" autocomplete="name" />
+                                </div>
+                                <p class="field-error" id="furigana-error"></p>
+                            </div>
+                            <div class="form-field">
+                                <div class="field-line">
+                                    <label class="field-label" for="phone">
+                                        電話番号 <span class="required-mark" aria-hidden="true">*</span>
+                                        <br />
+                                        <span class="field-note inline-note">（電話番号かメールアドレスのいずれか必須）</span>
+                                    </label>
+                                    <input id="phone" name="phone" type="tel" class="input-control" inputmode="tel" autocomplete="tel" placeholder="例：09012345678" />
+                                </div>
+                                <p class="field-error" id="phone-error"></p>
+                            </div>
+                            <div class="form-field">
+                                <div class="field-line">
+                                    <label class="field-label" for="email">
+                                        メールアドレス <span class="required-mark" aria-hidden="true">*</span>
+                                        <br />
+                                        <span class="field-note inline-note">（電話番号かメールアドレスのいずれか必須）</span>
+                                    </label>
+                                    <input id="email" name="email" type="email" class="input-control" autocomplete="email" placeholder="例：sample@example.com" />
+                                </div>
+                                <p class="field-error" id="email-error"></p>
+                            </div>
+                            <div class="form-field form-field-full">
+                                <div class="field-line align-start">
+                                    <div class="field-label form-label">連絡希望手段 <span class="required-mark" aria-hidden="true">*</span></div>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-item">
+                                            <input type="checkbox" id="contact-method-phone" name="contactMethod" value="phone" />
+                                            電話
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input type="checkbox" id="contact-method-email" name="contactMethod" value="email" />
+                                            メール
+                                        </label>
+                                    </div>
+                                </div>
+                                <p class="field-error" id="contact-method-error"></p>
+                            </div>
+                            <div class="form-field form-field-full" id="contact-time-wrapper" hidden>
+                                <div class="field-line">
+                                    <label class="field-label" for="contact-time">連絡希望時間帯</label>
+                                    <input id="contact-time" name="contactTime" type="text" class="input-control" placeholder="例：平日18時以降" />
+                                </div>
+                                <p class="field-error" id="contact-time-error"></p>
+                            </div>
+                            <div class="form-field">
+                                <div class="field-line align-start">
+                                    <label class="field-label" for="postal-code">訪問先 郵便番号</label>
+                                    <div class="postal-row">
+                                        <input id="postal-code" name="postalCode" type="text" class="input-control" inputmode="numeric" placeholder="例：123-4567" />
+                                        <button class="secondary-button" type="button" id="postal-search-button">住所を自動入力</button>
+                                    </div>
+                                </div>
+                                <p class="field-error" id="postal-code-error"></p>
+                                <p class="field-status" id="postal-status" aria-live="polite"></p>
+                            </div>
+                            <div class="form-field">
+                                <div class="field-line">
+                                    <label class="field-label" for="address">訪問先 住所</label>
+                                    <input id="address" name="address" type="text" class="input-control" autocomplete="street-address" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-block">
+                            <div class="form-block-title">依頼内容</div>
+                            <div class="form-grid">
+                                <div class="form-field form-field-full">
+                                    <div class="field-line align-start">
+                                        <div class="field-label form-label">希望メニュー<br />（複数選択可）</div>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="set" /> セットプラン</label>
+                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="hood" /> レンジフード</label>
+                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="kitchen" /> キッチン</label>
+                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="bath" /> 浴室</label>
+                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="toilet" /> トイレ</label>
+                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="vanity" /> 洗面</label>
+                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="ac" /> エアコン</label>
+                                            <label class="checkbox-item"><input type="checkbox" name="menu" value="washer" /> 洗濯機</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-field">
+                                    <div class="field-line">
+                                        <label class="field-label" for="quantity-notes">台数／箇所数の詳細</label>
+                                        <input id="quantity-notes" name="quantityNotes" type="text" class="input-control" placeholder="例：エアコン2台、浴室1箇所" />
+                                    </div>
+                                </div>
+                                <div class="form-field form-field-full">
+                                    <div class="field-line align-start">
+                                        <div class="field-label form-label">汚れの状態<br />（複数選択可）</div>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-item"><input type="checkbox" name="dirt" value="oil" /> 油汚れ</label>
+                                            <label class="checkbox-item"><input type="checkbox" name="dirt" value="mold" /> 水垢・カビ</label>
+                                            <label class="checkbox-item"><input type="checkbox" name="dirt" value="uric" /> 尿石</label>
+                                            <label class="checkbox-item"><input type="checkbox" name="dirt" value="smell" /> 臭い</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-field form-field-full">
+                                    <div class="field-line align-start">
+                                        <label class="field-label" for="request-notes">重点的に掃除してほしい箇所・触ってほしくない箇所・希望オプション</label>
+                                        <textarea id="request-notes" name="requestNotes" rows="3" class="input-control input-control-wide" placeholder="例：鏡の水垢を優先してほしい。換気扇の分解を希望。"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <div class="field-line">
+                                    <label class="field-label" for="purpose">目的・タイミング</label>
+                                    <select id="purpose" name="purpose" class="input-control">
+                                        <option value="" selected>選択してください</option>
+                                        <option value="regular">定期清掃</option>
+                                        <option value="year-end">大掃除</option>
+                                        <option value="before-in">入居前</option>
+                                        <option value="before-leave">退去前</option>
+                                        <option value="other">その他</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <div class="field-line">
+                                    <label class="field-label" for="purpose-notes">目的の補足</label>
+                                    <input id="purpose-notes" name="purposeNotes" type="text" class="input-control input-control-wide" placeholder="例：実家に帰省する前にまとめて清掃したい" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <div class="field-line align-start">
+                                <div class="field-label form-label">どこで知ったか <span class="required-mark" aria-hidden="true">*</span></div>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-item"><input type="checkbox" name="howKnown" value="sns" /> SNS</label>
+                                    <label class="checkbox-item"><input type="checkbox" name="howKnown" value="ads" /> 広告</label>
+                                    <label class="checkbox-item"><input type="checkbox" name="howKnown" value="search" /> 検索</label>
+                                    <label class="checkbox-item"><input type="checkbox" name="howKnown" value="referral" /> 紹介</label>
+                                    <label class="checkbox-item"><input type="checkbox" name="howKnown" value="repeat" /> リピート</label>
+                                </div>
+                            </div>
+                            <p class="field-error" id="how-known-error"></p>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <div class="field-line align-start">
+                                    <label class="field-label" for="attachments">汚れ箇所や広さがわかる写真の添付</label>
+                                    <input id="attachments" name="attachments" type="file" class="input-control file-input" accept="image/*,.pdf" multiple />
+                                </div>
+                                <p class="field-note">画像やPDFを添付できます</p>
+                            </div>
+                            <div class="form-field">
+                                <div class="field-line align-start">
+                                    <label class="field-label" for="additional-notes">その他ご要望</label>
+                                    <textarea id="additional-notes" name="additionalNotes" rows="3" class="input-control input-control-wide" placeholder="連絡が取りやすい時間帯など"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-status" id="form-status" aria-live="polite"></div>
+                        <div class="form-actions">
+                            <button class="primary-button" type="submit">送信する</button>
+                            <p class="form-action-note">送信前に入力内容を確認してください。</p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <img src="images/55gym.png" alt="55リフォームのロゴ" />
+                    <div class="footer-title">55リフォーム</div>
+                </div>
+
+                <div class="footer-items">
+                    <div class="footer-column footer-address">
+                        <div class="footer-heading">名古屋オフィス</div>
+                        <p class="footer-text">愛知県名古屋市中村区名駅南1-609オフィスビル1F</p>
+                        <p class="footer-text">TEL:052-990-3015</p>
+                    </div>
+
+                    <div class="footer-column">
+                        <ul class="footer-links">
+                            <li><a href="#">トップページ</a></li>
+                            <li><a href="#">エアコンクリーニング</a></li>
+                            <li><a href="#">キッチンクリーニング</a></li>
+                            <li><a href="#">浴室クリーニング</a></li>
+                            <li><a href="#">水回りセットプラン</a></li>
+                            <li><a href="#">定期清掃プラン</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <ul class="footer-links">
+                            <li><a href="#">新着情報</a></li>
+                            <li><a href="#">55Reformのハウスクリーニング</a></li>
+                            <li><a href="#">ブログ記事</a></li>
+                            <li><a href="#">法人のお客様向け</a></li>
+                            <li><a href="#">55Reform パートナー募集</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            (() => {
+                const menuButton = document.querySelector(".menu-button");
+                const menuPanel = document.getElementById("global-menu");
+                if (!menuButton || !menuPanel) return;
+                const closeButton = menuPanel.querySelector(".menu-close-button");
+
+                const closeMenu = () => {
+                    menuPanel.hidden = true;
+                    menuButton.setAttribute("aria-expanded", "false");
+                };
+
+                const toggleMenu = () => {
+                    const willOpen = menuPanel.hidden;
+                    menuPanel.hidden = !willOpen;
+                    menuButton.setAttribute("aria-expanded", String(willOpen));
+                };
+
+                menuButton.addEventListener("click", (event) => {
+                    event.stopPropagation();
+                    toggleMenu();
+                });
+
+                if (closeButton) {
+                    closeButton.addEventListener("click", (event) => {
+                        event.stopPropagation();
+                        closeMenu();
+                    });
+                }
+
+                document.addEventListener("click", (event) => {
+                    if (menuPanel.hidden) return;
+                    if (menuPanel.contains(event.target)) return;
+                    if (menuButton.contains(event.target)) return;
+                    closeMenu();
+                });
+
+                window.addEventListener("resize", () => {
+                    if (window.innerWidth > 960) {
+                        closeMenu();
+                    }
+                });
+            })();
+        </script>
+        <script>
+            (() => {
+                const form = document.getElementById("inquiry-form");
+                if (!form) return;
+
+                const phoneInput = document.getElementById("phone");
+                const emailInput = document.getElementById("email");
+                const postalInput = document.getElementById("postal-code");
+                const addressInput = document.getElementById("address");
+                const postalButton = document.getElementById("postal-search-button");
+                const postalStatus = document.getElementById("postal-status");
+                const contactMethodPhone = document.getElementById("contact-method-phone");
+                const contactMethodEmail = document.getElementById("contact-method-email");
+                const contactTimeWrapper = document.getElementById("contact-time-wrapper");
+                const contactTimeInput = document.getElementById("contact-time");
+                const formStatus = document.getElementById("form-status");
+
+                const errorTargets = {
+                    name: document.getElementById("name-error"),
+                    furigana: document.getElementById("furigana-error"),
+                    phone: document.getElementById("phone-error"),
+                    email: document.getElementById("email-error"),
+                    contactMethod: document.getElementById("contact-method-error"),
+                    contactTime: document.getElementById("contact-time-error"),
+                    postalCode: document.getElementById("postal-code-error"),
+                    howKnown: document.getElementById("how-known-error"),
+                };
+
+                const setFieldError = (key, message) => {
+                    if (errorTargets[key]) {
+                        errorTargets[key].textContent = message;
+                    }
+                };
+
+                const clearErrors = () => {
+                    Object.values(errorTargets).forEach((el) => {
+                        if (el) el.textContent = "";
+                    });
+                    if (formStatus) {
+                        formStatus.textContent = "";
+                        formStatus.classList.remove("form-status-error", "form-status-success");
+                    }
+                };
+
+                const toggleContactTime = () => {
+                    if (!contactMethodPhone || !contactTimeWrapper) return;
+                    const show = contactMethodPhone.checked;
+                    contactTimeWrapper.hidden = !show;
+                };
+
+                toggleContactTime();
+
+                [contactMethodPhone, contactMethodEmail].forEach((el) => {
+                    if (!el) return;
+                    el.addEventListener("change", toggleContactTime);
+                });
+
+                const sanitizePostal = (value) => value.replace(/[^0-9]/g, "");
+                const postalPattern = /^[0-9]{3}-?[0-9]{4}$/;
+
+                const fetchAddress = async () => {
+                    if (!postalInput || !postalStatus) return;
+                    const raw = postalInput.value.trim();
+                    const sanitized = sanitizePostal(raw);
+
+                    postalStatus.textContent = "";
+                    setFieldError("postalCode", "");
+
+                    if (!sanitized) {
+                        setFieldError("postalCode", "郵便番号を入力してください。");
+                        return;
+                    }
+
+                    if (!postalPattern.test(raw)) {
+                        setFieldError("postalCode", "郵便番号は7桁の数字で入力してください。");
+                        return;
+                    }
+
+                    postalStatus.textContent = "検索中…";
+
+                    try {
+                        const response = await fetch(`https://zipcloud.ibsnet.co.jp/api/search?zipcode=${sanitized}`);
+                        const data = await response.json();
+
+                        if (data.status !== 200 || !data.results || !data.results.length) {
+                            setFieldError("postalCode", "郵便番号に該当する住所が見つかりませんでした。");
+                            postalStatus.textContent = "";
+                            return;
+                        }
+
+                        const result = data.results[0];
+                        const fullAddress = `${result.address1}${result.address2}${result.address3}`;
+                        if (addressInput) {
+                            addressInput.value = fullAddress;
+                        }
+                        postalStatus.textContent = "住所を自動入力しました。";
+                    } catch (error) {
+                        console.error(error);
+                        setFieldError("postalCode", "住所検索に失敗しました。時間をおいて再度お試しください。");
+                        postalStatus.textContent = "";
+                    }
+                };
+
+                if (postalButton) {
+                    postalButton.addEventListener("click", fetchAddress);
+                }
+
+                const validateForm = () => {
+                    clearErrors();
+                    let hasError = false;
+
+                    const nameValue = document.getElementById("name")?.value.trim();
+                    const furiganaValue = document.getElementById("furigana")?.value.trim();
+                    const phoneValue = phoneInput?.value.trim();
+                    const emailValue = emailInput?.value.trim();
+                    const howKnownChecked = Array.from(document.querySelectorAll('input[name="howKnown"]:checked'));
+                    const contactMethodChecked = Array.from(document.querySelectorAll('input[name="contactMethod"]:checked'));
+                    const postalValue = postalInput?.value.trim();
+
+                    if (!nameValue) {
+                        setFieldError("name", "お名前を入力してください。");
+                        hasError = true;
+                    }
+
+                    if (!furiganaValue) {
+                        setFieldError("furigana", "フリガナを入力してください。");
+                        hasError = true;
+                    }
+
+                    if (!phoneValue && !emailValue) {
+                        setFieldError("phone", "電話番号またはメールアドレスのいずれかを入力してください。");
+                        setFieldError("email", "電話番号またはメールアドレスのいずれかを入力してください。");
+                        hasError = true;
+                    }
+
+                    if (!contactMethodChecked.length) {
+                        setFieldError("contactMethod", "連絡希望手段を選択してください。");
+                        hasError = true;
+                    }
+
+                    if (contactMethodPhone?.checked && contactTimeInput && !contactTimeInput.value.trim()) {
+                        setFieldError("contactTime", "連絡希望時間帯を入力してください。");
+                        hasError = true;
+                    }
+
+                    if (postalValue && !postalPattern.test(postalValue)) {
+                        setFieldError("postalCode", "郵便番号は7桁の数字で入力してください。");
+                        hasError = true;
+                    }
+
+                    if (!howKnownChecked.length) {
+                        setFieldError("howKnown", "どこで知ったかを選択してください。");
+                        hasError = true;
+                    }
+
+                    if (hasError && formStatus) {
+                        formStatus.textContent = "入力内容に不備があります。赤字の項目を確認してください。";
+                        formStatus.classList.add("form-status-error");
+                    }
+
+                    return !hasError;
+                };
+
+                form.addEventListener("submit", (event) => {
+                    event.preventDefault();
+                    const isValid = validateForm();
+                    if (!isValid) return;
+
+                    if (formStatus) {
+                        formStatus.textContent = "送信を受け付けました。担当者よりご連絡いたします。（デモ送信）";
+                        formStatus.classList.add("form-status-success");
+                    }
+                });
+            })();
+        </script>
+    </body>
+</html>
