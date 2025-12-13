@@ -69,10 +69,6 @@ body {
     background-color: #45a44e;
 }
 
-.qr-placeholder {
-    display: none;
-}
-
 .qr-inner {
     font-weight: 800;
     color: #2b2b2b;
